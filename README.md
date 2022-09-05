@@ -3,6 +3,8 @@ Aplikasi pengelolaan keuangan yang memiliki fitur input jumlah uang awal, input 
 
 DOAIBU
 
-Ketua Kelompok: 
+Ketua Kelompok:
+
 Anggota 1:
+
 Anggota 2: 
