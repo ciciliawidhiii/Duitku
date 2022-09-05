@@ -3,7 +3,7 @@ Aplikasi pengelolaan keuangan yang memiliki fitur input jumlah uang awal, input 
 
 DOAIBU
 
-Ketua Kelompok:
+Ketua Kelompok: M Fatin Abimanyu 20/456844/TK/50668
 
 Anggota 1: Resiyanda Wafa R A 20/460563/TK/51152
 
