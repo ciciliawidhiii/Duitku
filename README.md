@@ -5,6 +5,6 @@ DOAIBU
 
 Ketua Kelompok:
 
-Anggota 1: Resiyanda Wafa R A - 20/460653/TK/51152
+Anggota 1:
 
 Anggota 2: Cicilia Widhi Astuti - 20/456362/TK/50492 
