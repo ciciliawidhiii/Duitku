@@ -5,6 +5,6 @@ DOAIBU
 
 Ketua Kelompok:
 
-Anggota 1: 
+Anggota 1: Resiyanda Wafa R A 20/460563/TK/51152
 
 Anggota 2:  
