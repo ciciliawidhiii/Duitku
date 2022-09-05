@@ -7,4 +7,4 @@ Ketua Kelompok:
 
 Anggota 1:
 
-Anggota 2: 
+Anggota 2: Cicilia Widhi Astuti - 20/456362/TK/50492 
