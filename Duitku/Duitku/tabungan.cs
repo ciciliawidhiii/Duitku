@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace Duitku
 {
-    internal class tabungan
+    class tabungan
     {
+        private int _duitTabung;
+
+        public int duitTabung
+        {
+            get { return _duitTabung;}
+            set { _duitTabung = value;}
+        }
+
+        public Boolean Tabunganku(int duitTabung)
+        {
+            return true; 
+        }
     }
 }

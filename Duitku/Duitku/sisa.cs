@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace Duitku
 {
-    internal class sisa
+    class sisa
     {
+        private int _duitAkhir; 
+
+        public int duitAkhir
+        {
+            get { return _duitAkhir;}
+        }
+
+        public int duitSisa(int duitAkhit)
+        {
+            pemasukan-tabungan-pengeluaran;
+            return true; 
+        }
     }
 }

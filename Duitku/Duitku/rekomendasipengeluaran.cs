@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace Duitku
 {
-    internal class rekomendasipengeluaran
+    class rekomendasipengeluaran
     {
+        private int _duitRec;
+
+        public int duitRec
+        {
+            get { return _duitRec;}
+        }
+
+        public int reccomendation(int duitRec)
+        {
+            ((pemasukan - tabungan)/jangkawaktu);
+            return true;
+        }
     }
 }

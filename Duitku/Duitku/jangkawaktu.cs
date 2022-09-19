@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace Duitku
 {
-    internal class jangkawaktu
+    class jangkawaktu
     {
+        private int _waktuDuit;
+
+        public int waktuDuit
+        {
+            get { return _waktuDuit;}
+            set { _waktuDuit = value;}
+        }
+
+        public Boolean jangkaWaktu(int waktuDuit)
+        {
+            return true; 
+        }
     }
 }
