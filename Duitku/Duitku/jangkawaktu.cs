@@ -16,9 +16,9 @@ namespace Duitku
             set { _waktuDuit = value;}
         }
 
-        public Boolean jangkaWaktu(int waktuDuit)
+        public Boolean JangkaWaktu(int waktuDuit)
         {
-            return true; 
+            return true;
         }
     }
 }

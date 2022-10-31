@@ -16,7 +16,7 @@ namespace Duitku
             set { _duitAwal = value;}
         }
 
-        public Boolean duitInput(int duitAwal)
+        public Boolean duitInput(int pemasukan)
         {
             return true; 
         }

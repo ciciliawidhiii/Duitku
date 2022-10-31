@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.label1 = new System.Windows.Forms.Label();
             this.dgvRekomendasiH = new System.Windows.Forms.DataGridView();
@@ -40,6 +41,7 @@
             this.llHome = new System.Windows.Forms.LinkLabel();
             this.llCalendar = new System.Windows.Forms.LinkLabel();
             this.llFinance = new System.Windows.Forms.LinkLabel();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvRekomendasiH)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPengeluaranH)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSisaH)).BeginInit();
@@ -166,6 +168,11 @@
             this.llFinance.TabStop = true;
             this.llFinance.Text = "Finance";
             // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.Visible = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -209,5 +216,6 @@
         private LinkLabel llHome;
         private LinkLabel llCalendar;
         private LinkLabel llFinance;
+        private NotifyIcon notifyIcon1;
     }
 }

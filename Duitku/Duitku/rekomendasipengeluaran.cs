@@ -13,12 +13,16 @@ namespace Duitku
         public int duitRec
         {
             get { return _duitRec;}
+            set { _duitRec = value; }
         }
 
         public int reccomendation(int duitRec)
         {
-            ((pemasukan - tabungan)/jangkawaktu);
-            return true;
+            pemasukan n = new pemasukan();
+            tabungan m = new tabungan();
+            jangkawaktu k = new jangkawaktu();
+            duitRec = ((n.duitAwal - m.duitTabung)/k.waktuDuit);
+            return duitRec;
         }
     }
 }

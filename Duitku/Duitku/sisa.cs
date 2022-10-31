@@ -15,10 +15,13 @@ namespace Duitku
             get { return _duitAkhir;}
         }
 
-        public int duitSisa(int duitAkhit)
+        public int duitSisa(int duitAkhir)
         {
-            pemasukan-tabungan-pengeluaran;
-            return true; 
+            pemasukan n = new pemasukan();
+            tabungan m = new tabungan();
+            pengeluaran k = new pengeluaran();
+            int sisa = n.duitAwal - m.duitTabung - k.duitKeluar;
+            return sisa; 
         }
     }
 }
