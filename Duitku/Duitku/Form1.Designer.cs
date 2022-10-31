@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formLogin));
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,19 +37,8 @@
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.IndianRed;
-            this.label1.Location = new System.Drawing.Point(135, 458);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(352, 117);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Duitku";
             // 
             // label2
             // 
@@ -118,6 +106,7 @@
             this.tbEmail.Size = new System.Drawing.Size(534, 57);
             this.tbEmail.TabIndex = 6;
             this.tbEmail.Text = "example@gmail.com";
+            this.tbEmail.TextChanged += new System.EventHandler(this.tbEmail_TextChanged);
             // 
             // tbPassword
             // 
@@ -139,8 +128,20 @@
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(243, 61);
             this.btnLogin.TabIndex = 8;
-            this.btnLogin.Text = "button1";
+            this.btnLogin.Text = "Sign In";
             this.btnLogin.UseVisualStyleBackColor = false;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.IndianRed;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(141, 479);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(294, 114);
+            this.guna2HtmlLabel1.TabIndex = 9;
+            this.guna2HtmlLabel1.Text = "Duitku";
+            this.guna2HtmlLabel1.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
             // 
             // formLogin
             // 
@@ -149,6 +150,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1418, 968);
+            this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.tbPassword);
             this.Controls.Add(this.tbEmail);
@@ -157,7 +159,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.splitter1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
@@ -170,8 +171,6 @@
         }
 
         #endregion
-
-        private Label label1;
         private Label label2;
         private Splitter splitter1;
         private Label label3;
@@ -180,5 +179,6 @@
         private TextBox tbEmail;
         private TextBox tbPassword;
         private Button btnLogin;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
     }
 }
