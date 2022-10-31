@@ -1,8 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "f+UAnZhW5N5i0jdxEu+ZY8iHrovxrY6RlrAO4RO9r5GY0BwJdLMf9OUCtPXe5WgSAz4df9XyMKbVkwPQNRctIQ==",
+  "dgSpecHash": "BnxU9676DpEyAoG90vkjH48U/xGJ/IALDJUznftxD08XE+pPVW37Udyt+ps5PGfTeWARbgif8kDFC8k3fL4H9A==",
   "success": true,
   "projectFilePath": "D:\\OneDrive - UGM 365\\Documents\\GitHub\\Duitku\\Duitku\\Duitku\\Duitku.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\Asus\\.nuget\\packages\\guna.ui2.winforms\\2.0.3.5\\guna.ui2.winforms.2.0.3.5.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Guna.UI2.WinForms 2.0.3.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Guna.UI2.WinForms",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }
