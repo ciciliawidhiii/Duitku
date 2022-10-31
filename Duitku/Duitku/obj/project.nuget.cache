@@ -1,18 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "wF5ZIt5tR71G01LaBjfYUQnQEcvEYLBC4Gkizx1YTbXY+Z5sJv658vox6O3S8ijiPqC/jOdEwxqkAHEMhT74tw==",
+  "dgSpecHash": "O0Z/I3Wt5cBqB/m5AOsf1kWLsjEckyLsWEvnqMcZfY84VoMfagQ2+YMQNXyCIWgDfBmrr4xQqE/Gq+5eRUol0w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Asus\\Documents\\GitHub\\PAW\\Duitku\\Duitku\\Duitku\\Duitku.csproj",
+  "projectFilePath": "C:\\Users\\Asus\\Documents\\GitHub\\Duitku\\Duitku\\Duitku\\Duitku.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Asus\\.nuget\\packages\\guna.ui2.winforms\\2.0.3.5\\guna.ui2.winforms.2.0.3.5.nupkg.sha512"
   ],
   "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Asus\\Documents\\GitHub\\PAW\\Duitku\\Duitku\\Duitku\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    },
     {
       "code": "NU1701",
       "level": "Warning",

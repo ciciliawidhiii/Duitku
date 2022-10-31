@@ -41,11 +41,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus\\Documents\\GitHub\\PAW\\Duitku\\Duitku\\Duitku\\Duitku.csproj",
+      "projectUniqueName": "C:\\Users\\Asus\\Documents\\GitHub\\Duitku\\Duitku\\Duitku\\Duitku.csproj",
       "projectName": "Duitku",
-      "projectPath": "C:\\Users\\Asus\\Documents\\GitHub\\PAW\\Duitku\\Duitku\\Duitku\\Duitku.csproj",
+      "projectPath": "C:\\Users\\Asus\\Documents\\GitHub\\Duitku\\Duitku\\Duitku\\Duitku.csproj",
       "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asus\\Documents\\GitHub\\PAW\\Duitku\\Duitku\\Duitku\\obj\\",
+      "outputPath": "C:\\Users\\Asus\\Documents\\GitHub\\Duitku\\Duitku\\Duitku\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -60,7 +60,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -108,12 +107,6 @@
     }
   },
   "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Asus\\Documents\\GitHub\\PAW\\Duitku\\Duitku\\Duitku\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    },
     {
       "code": "NU1701",
       "level": "Warning",

@@ -16,5 +16,18 @@ namespace Duitku
         {
             InitializeComponent();
         }
+<<<<<<< Updated upstream
+=======
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
+>>>>>>> Stashed changes
     }
 }
