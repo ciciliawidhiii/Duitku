@@ -8,24 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Asus\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Asus\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus\\Documents\\GitHub\\PAW\\Duitku\\Duitku\\Duitku\\Duitku.csproj",
+      "projectUniqueName": "D:\\OneDrive - UGM 365\\Documents\\GitHub\\Duitku\\Duitku\\Duitku\\Duitku.csproj",
       "projectName": "Duitku",
-      "projectPath": "C:\\Users\\Asus\\Documents\\GitHub\\PAW\\Duitku\\Duitku\\Duitku\\Duitku.csproj",
+      "projectPath": "D:\\OneDrive - UGM 365\\Documents\\GitHub\\Duitku\\Duitku\\Duitku\\Duitku.csproj",
       "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asus\\Documents\\GitHub\\PAW\\Duitku\\Duitku\\Duitku\\obj\\",
+      "outputPath": "D:\\OneDrive - UGM 365\\Documents\\GitHub\\Duitku\\Duitku\\Duitku\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -33,7 +28,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
