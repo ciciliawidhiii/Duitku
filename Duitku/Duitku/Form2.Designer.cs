@@ -40,6 +40,7 @@
             this.llHome = new System.Windows.Forms.LinkLabel();
             this.llCalendar = new System.Windows.Forms.LinkLabel();
             this.llFinance = new System.Windows.Forms.LinkLabel();
+            this.btnLogout = new Guna.UI2.WinForms.Guna2CircleButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRekomendasiH)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPengeluaranH)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSisaH)).BeginInit();
@@ -166,6 +167,23 @@
             this.llFinance.TabStop = true;
             this.llFinance.Text = "Finance";
             // 
+            // btnLogout
+            // 
+            this.btnLogout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLogout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLogout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnLogout.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.Location = new System.Drawing.Point(1270, 826);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnLogout.Size = new System.Drawing.Size(122, 130);
+            this.btnLogout.TabIndex = 11;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.Click += new System.EventHandler(this.guna2CircleButton1_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -174,6 +192,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1418, 968);
+            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.llFinance);
             this.Controls.Add(this.llCalendar);
             this.Controls.Add(this.llHome);
@@ -209,5 +228,6 @@
         private LinkLabel llHome;
         private LinkLabel llCalendar;
         private LinkLabel llFinance;
+        private Guna.UI2.WinForms.Guna2CircleButton btnLogout;
     }
 }

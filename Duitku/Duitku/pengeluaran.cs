@@ -16,7 +16,7 @@ namespace Duitku
             set { _duitKeluar = value;}
         }
 
-        public Boolean duitKeluar(int duitAwal)
+        public Boolean duitOut(int duitAwal)
         {
             return true; 
         }

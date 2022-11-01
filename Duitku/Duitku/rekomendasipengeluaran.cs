@@ -17,8 +17,11 @@ namespace Duitku
 
         public int reccomendation(int duitRec)
         {
-            ((pemasukan - tabungan)/jangkawaktu);
-            return true;
+            pemasukan n = new pemasukan();
+            tabungan m = new tabungan();
+            jangkawaktu k = new jangkawaktu();
+            duitRec = ((n.duitAwal - m.duitTabung) / k.waktuDuit);
+            return duitRec;
         }
     }
 }

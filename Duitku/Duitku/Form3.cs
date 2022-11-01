@@ -16,18 +16,15 @@ namespace Duitku
         {
             InitializeComponent();
         }
-<<<<<<< Updated upstream
-=======
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void Form3_Load(object sender, EventArgs e)
         {
 
         }
->>>>>>> Stashed changes
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+            formLogin f1 = new formLogin();
+            f1.ShowDialog();
+        }
     }
 }

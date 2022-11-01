@@ -26,5 +26,11 @@ namespace Duitku
         {
 
         }
+
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+            Form3 f3 = new Form3();
+            f3.ShowDialog();
+        }
     }
 }

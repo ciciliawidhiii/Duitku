@@ -17,8 +17,11 @@ namespace Duitku
 
         public int duitSisa(int duitAkhit)
         {
-            pemasukan-tabungan-pengeluaran;
-            return true; 
+            pemasukan n = new pemasukan();
+            tabungan m = new tabungan();
+            pengeluaran k = new pengeluaran();
+            int sisa = n.duitAwal - m.duitTabung - k.duitKeluar;
+            return sisa;
         }
     }
 }
