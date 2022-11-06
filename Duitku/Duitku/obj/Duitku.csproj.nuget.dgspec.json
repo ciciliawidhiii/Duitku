@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\DuitkuBaru\\Duitku\\Duitku\\Duitku\\Duitku.csproj": {}
+    "D:\\Bismilla\\Duitku\\Duitku\\Duitku\\Duitku.csproj": {}
   },
   "projects": {
-    "E:\\DuitkuBaru\\Duitku\\Duitku\\Duitku\\Duitku.csproj": {
+    "D:\\Bismilla\\Duitku\\Duitku\\Duitku\\Duitku.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\DuitkuBaru\\Duitku\\Duitku\\Duitku\\Duitku.csproj",
+        "projectUniqueName": "D:\\Bismilla\\Duitku\\Duitku\\Duitku\\Duitku.csproj",
         "projectName": "Duitku",
-        "projectPath": "E:\\DuitkuBaru\\Duitku\\Duitku\\Duitku\\Duitku.csproj",
+        "projectPath": "D:\\Bismilla\\Duitku\\Duitku\\Duitku\\Duitku.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "E:\\DuitkuBaru\\Duitku\\Duitku\\Duitku\\obj\\",
+        "outputPath": "D:\\Bismilla\\Duitku\\Duitku\\Duitku\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

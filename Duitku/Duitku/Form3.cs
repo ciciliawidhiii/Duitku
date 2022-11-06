@@ -26,5 +26,10 @@ namespace Duitku
             formLogin f1 = new formLogin();
             f1.ShowDialog();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
