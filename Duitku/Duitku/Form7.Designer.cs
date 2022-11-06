@@ -151,9 +151,9 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label1.Location = new System.Drawing.Point(817, 211);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(407, 19);
+            this.label1.Size = new System.Drawing.Size(286, 19);
             this.label1.TabIndex = 35;
-            this.label1.Text = "Masukkan uang pengeluaran Anda (dalam rupiah)";
+            this.label1.Text = "Masukkan uang pengeluaran Anda\r\n";
             // 
             // dataGridView1
             // 

@@ -260,9 +260,9 @@
             this.lblKetDanaMasuk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.lblKetDanaMasuk.Location = new System.Drawing.Point(153, 714);
             this.lblKetDanaMasuk.Name = "lblKetDanaMasuk";
-            this.lblKetDanaMasuk.Size = new System.Drawing.Size(355, 19);
+            this.lblKetDanaMasuk.Size = new System.Drawing.Size(238, 19);
             this.lblKetDanaMasuk.TabIndex = 43;
-            this.lblKetDanaMasuk.Text = "Masukkan uang masuk Anda (dalam rupiah)";
+            this.lblKetDanaMasuk.Text = "Masukkan uang masuk Anda ";
             // 
             // lbDateMasuk
             // 
