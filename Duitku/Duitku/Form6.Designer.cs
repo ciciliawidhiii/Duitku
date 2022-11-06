@@ -1,0 +1,295 @@
+﻿namespace Duitku
+{
+    partial class Form6
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.tbUangAwal = new System.Windows.Forms.TextBox();
+            this.llIncome = new System.Windows.Forms.LinkLabel();
+            this.llHome = new System.Windows.Forms.LinkLabel();
+            this.lbUangAwal = new System.Windows.Forms.Label();
+            this.lbRp = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbJangkaWaktu = new System.Windows.Forms.Label();
+            this.tbJangkaWaktu = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbTabungan = new System.Windows.Forms.Label();
+            this.tbTabungan = new System.Windows.Forms.TextBox();
+            this.btnAddFinance = new System.Windows.Forms.Button();
+            this.dgvReccom = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
+            this.llOutcome = new System.Windows.Forms.LinkLabel();
+            this.lbKetUangAwal = new System.Windows.Forms.Label();
+            this.lblKetJangkaWaktu = new System.Windows.Forms.Label();
+            this.lbKetTabungan = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReccom)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // tbUangAwal
+            // 
+            this.tbUangAwal.Location = new System.Drawing.Point(153, 180);
+            this.tbUangAwal.Name = "tbUangAwal";
+            this.tbUangAwal.Size = new System.Drawing.Size(262, 31);
+            this.tbUangAwal.TabIndex = 0;
+            // 
+            // llIncome
+            // 
+            this.llIncome.AutoSize = true;
+            this.llIncome.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.llIncome.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.llIncome.Location = new System.Drawing.Point(698, 31);
+            this.llIncome.Name = "llIncome";
+            this.llIncome.Size = new System.Drawing.Size(85, 23);
+            this.llIncome.TabIndex = 13;
+            this.llIncome.TabStop = true;
+            this.llIncome.Text = "Income";
+            // 
+            // llHome
+            // 
+            this.llHome.AutoSize = true;
+            this.llHome.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.llHome.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.llHome.Location = new System.Drawing.Point(427, 31);
+            this.llHome.Name = "llHome";
+            this.llHome.Size = new System.Drawing.Size(69, 23);
+            this.llHome.TabIndex = 11;
+            this.llHome.TabStop = true;
+            this.llHome.Text = "Home";
+            // 
+            // lbUangAwal
+            // 
+            this.lbUangAwal.AutoSize = true;
+            this.lbUangAwal.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbUangAwal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.lbUangAwal.Location = new System.Drawing.Point(153, 134);
+            this.lbUangAwal.Name = "lbUangAwal";
+            this.lbUangAwal.Size = new System.Drawing.Size(185, 34);
+            this.lbUangAwal.TabIndex = 14;
+            this.lbUangAwal.Text = "Dana Masuk";
+            // 
+            // lbRp
+            // 
+            this.lbRp.AutoSize = true;
+            this.lbRp.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbRp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.lbRp.Location = new System.Drawing.Point(105, 174);
+            this.lbRp.Name = "lbRp";
+            this.lbRp.Size = new System.Drawing.Size(51, 34);
+            this.lbRp.TabIndex = 15;
+            this.lbRp.Text = "Rp";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.label1.Location = new System.Drawing.Point(105, 337);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 34);
+            this.label1.TabIndex = 18;
+            // 
+            // lbJangkaWaktu
+            // 
+            this.lbJangkaWaktu.AutoSize = true;
+            this.lbJangkaWaktu.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbJangkaWaktu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.lbJangkaWaktu.Location = new System.Drawing.Point(153, 297);
+            this.lbJangkaWaktu.Name = "lbJangkaWaktu";
+            this.lbJangkaWaktu.Size = new System.Drawing.Size(211, 34);
+            this.lbJangkaWaktu.TabIndex = 17;
+            this.lbJangkaWaktu.Text = "Jangka Waktu";
+            // 
+            // tbJangkaWaktu
+            // 
+            this.tbJangkaWaktu.Location = new System.Drawing.Point(153, 343);
+            this.tbJangkaWaktu.Name = "tbJangkaWaktu";
+            this.tbJangkaWaktu.Size = new System.Drawing.Size(262, 31);
+            this.tbJangkaWaktu.TabIndex = 16;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.label2.Location = new System.Drawing.Point(105, 507);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(51, 34);
+            this.label2.TabIndex = 21;
+            this.label2.Text = "Rp";
+            // 
+            // lbTabungan
+            // 
+            this.lbTabungan.AutoSize = true;
+            this.lbTabungan.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbTabungan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.lbTabungan.Location = new System.Drawing.Point(153, 467);
+            this.lbTabungan.Name = "lbTabungan";
+            this.lbTabungan.Size = new System.Drawing.Size(153, 34);
+            this.lbTabungan.TabIndex = 20;
+            this.lbTabungan.Text = "Tabungan";
+            // 
+            // tbTabungan
+            // 
+            this.tbTabungan.Location = new System.Drawing.Point(153, 513);
+            this.tbTabungan.Name = "tbTabungan";
+            this.tbTabungan.Size = new System.Drawing.Size(262, 31);
+            this.tbTabungan.TabIndex = 19;
+            // 
+            // btnAddFinance
+            // 
+            this.btnAddFinance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnAddFinance.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAddFinance.ForeColor = System.Drawing.Color.White;
+            this.btnAddFinance.Location = new System.Drawing.Point(180, 624);
+            this.btnAddFinance.Name = "btnAddFinance";
+            this.btnAddFinance.Size = new System.Drawing.Size(211, 62);
+            this.btnAddFinance.TabIndex = 22;
+            this.btnAddFinance.Text = "Add";
+            this.btnAddFinance.UseVisualStyleBackColor = false;
+            // 
+            // dgvReccom
+            // 
+            this.dgvReccom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvReccom.Location = new System.Drawing.Point(861, 242);
+            this.dgvReccom.Name = "dgvReccom";
+            this.dgvReccom.RowHeadersWidth = 62;
+            this.dgvReccom.RowTemplate.Height = 33;
+            this.dgvReccom.Size = new System.Drawing.Size(381, 225);
+            this.dgvReccom.TabIndex = 23;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.label3.Location = new System.Drawing.Point(868, 205);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(366, 34);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "Rekomendasi untuk Anda";
+            // 
+            // llOutcome
+            // 
+            this.llOutcome.AutoSize = true;
+            this.llOutcome.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.llOutcome.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.llOutcome.Location = new System.Drawing.Point(950, 31);
+            this.llOutcome.Name = "llOutcome";
+            this.llOutcome.Size = new System.Drawing.Size(104, 23);
+            this.llOutcome.TabIndex = 25;
+            this.llOutcome.TabStop = true;
+            this.llOutcome.Text = "Outcome";
+            // 
+            // lbKetUangAwal
+            // 
+            this.lbKetUangAwal.AutoSize = true;
+            this.lbKetUangAwal.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.lbKetUangAwal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lbKetUangAwal.Location = new System.Drawing.Point(153, 223);
+            this.lbKetUangAwal.Name = "lbKetUangAwal";
+            this.lbKetUangAwal.Size = new System.Drawing.Size(367, 19);
+            this.lbKetUangAwal.TabIndex = 26;
+            this.lbKetUangAwal.Text = "Masukkan uang Anda saat ini (dalam rupiah) ";
+            // 
+            // lblKetJangkaWaktu
+            // 
+            this.lblKetJangkaWaktu.AutoSize = true;
+            this.lblKetJangkaWaktu.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.lblKetJangkaWaktu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblKetJangkaWaktu.Location = new System.Drawing.Point(153, 386);
+            this.lblKetJangkaWaktu.Name = "lblKetJangkaWaktu";
+            this.lblKetJangkaWaktu.Size = new System.Drawing.Size(459, 19);
+            this.lblKetJangkaWaktu.TabIndex = 27;
+            this.lblKetJangkaWaktu.Text = "Masukkan jumlah hari Anda akan menggunakan uang ini";
+            // 
+            // lbKetTabungan
+            // 
+            this.lbKetTabungan.AutoSize = true;
+            this.lbKetTabungan.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.lbKetTabungan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lbKetTabungan.Location = new System.Drawing.Point(153, 557);
+            this.lbKetTabungan.Name = "lbKetTabungan";
+            this.lbKetTabungan.Size = new System.Drawing.Size(610, 19);
+            this.lbKetTabungan.TabIndex = 28;
+            this.lbKetTabungan.Text = "Masukkan uang tabungan dalam rupiah (jika tidak ingin menabung isikan 0)";
+            // 
+            // Form6
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(1418, 968);
+            this.Controls.Add(this.lbKetTabungan);
+            this.Controls.Add(this.lblKetJangkaWaktu);
+            this.Controls.Add(this.lbKetUangAwal);
+            this.Controls.Add(this.llOutcome);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.dgvReccom);
+            this.Controls.Add(this.btnAddFinance);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbTabungan);
+            this.Controls.Add(this.tbTabungan);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbJangkaWaktu);
+            this.Controls.Add(this.tbJangkaWaktu);
+            this.Controls.Add(this.lbRp);
+            this.Controls.Add(this.lbUangAwal);
+            this.Controls.Add(this.llIncome);
+            this.Controls.Add(this.llHome);
+            this.Controls.Add(this.tbUangAwal);
+            this.DoubleBuffered = true;
+            this.Name = "Form6";
+            this.Text = "Form6";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReccom)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private TextBox tbUangAwal;
+        private LinkLabel llIncome;
+        private LinkLabel llHome;
+        private Label lbUangAwal;
+        private Label lbRp;
+        private Label label1;
+        private Label lbJangkaWaktu;
+        private TextBox tbJangkaWaktu;
+        private Label label2;
+        private Label lbTabungan;
+        private TextBox tbTabungan;
+        private Button btnAddFinance;
+        private DataGridView dgvReccom;
+        private Label label3;
+        private LinkLabel llOutcome;
+        private Label lbKetUangAwal;
+        private Label lblKetJangkaWaktu;
+        private Label lbKetTabungan;
+    }
+}
