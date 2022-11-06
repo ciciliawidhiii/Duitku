@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form6));
             this.tbUangAwal = new System.Windows.Forms.TextBox();
             this.llIncome = new System.Windows.Forms.LinkLabel();
             this.llHome = new System.Windows.Forms.LinkLabel();
@@ -46,7 +47,12 @@
             this.lbKetUangAwal = new System.Windows.Forms.Label();
             this.lblKetJangkaWaktu = new System.Windows.Forms.Label();
             this.lbKetTabungan = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblKetDanaMasuk = new System.Windows.Forms.Label();
+            this.lbDateMasuk = new System.Windows.Forms.Label();
+            this.dtpDanaMasuk = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReccom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tbUangAwal
@@ -164,7 +170,7 @@
             this.btnAddFinance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnAddFinance.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAddFinance.ForeColor = System.Drawing.Color.White;
-            this.btnAddFinance.Location = new System.Drawing.Point(180, 624);
+            this.btnAddFinance.Location = new System.Drawing.Point(181, 836);
             this.btnAddFinance.Name = "btnAddFinance";
             this.btnAddFinance.Size = new System.Drawing.Size(211, 62);
             this.btnAddFinance.TabIndex = 22;
@@ -237,6 +243,48 @@
             this.lbKetTabungan.TabIndex = 28;
             this.lbKetTabungan.Text = "Masukkan uang tabungan dalam rupiah (jika tidak ingin menabung isikan 0)";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(918, 537);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(281, 256);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 40;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblKetDanaMasuk
+            // 
+            this.lblKetDanaMasuk.AutoSize = true;
+            this.lblKetDanaMasuk.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.lblKetDanaMasuk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblKetDanaMasuk.Location = new System.Drawing.Point(153, 714);
+            this.lblKetDanaMasuk.Name = "lblKetDanaMasuk";
+            this.lblKetDanaMasuk.Size = new System.Drawing.Size(355, 19);
+            this.lblKetDanaMasuk.TabIndex = 43;
+            this.lblKetDanaMasuk.Text = "Masukkan uang masuk Anda (dalam rupiah)";
+            // 
+            // lbDateMasuk
+            // 
+            this.lbDateMasuk.AutoSize = true;
+            this.lbDateMasuk.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbDateMasuk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.lbDateMasuk.Location = new System.Drawing.Point(153, 630);
+            this.lbDateMasuk.Name = "lbDateMasuk";
+            this.lbDateMasuk.Size = new System.Drawing.Size(125, 34);
+            this.lbDateMasuk.TabIndex = 42;
+            this.lbDateMasuk.Text = "Tanggal";
+            // 
+            // dtpDanaMasuk
+            // 
+            this.dtpDanaMasuk.CalendarForeColor = System.Drawing.Color.Black;
+            this.dtpDanaMasuk.CalendarTitleForeColor = System.Drawing.Color.Black;
+            this.dtpDanaMasuk.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpDanaMasuk.Location = new System.Drawing.Point(153, 671);
+            this.dtpDanaMasuk.Name = "dtpDanaMasuk";
+            this.dtpDanaMasuk.Size = new System.Drawing.Size(297, 27);
+            this.dtpDanaMasuk.TabIndex = 41;
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -244,6 +292,10 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1418, 968);
+            this.Controls.Add(this.lblKetDanaMasuk);
+            this.Controls.Add(this.lbDateMasuk);
+            this.Controls.Add(this.dtpDanaMasuk);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lbKetTabungan);
             this.Controls.Add(this.lblKetJangkaWaktu);
             this.Controls.Add(this.lbKetUangAwal);
@@ -266,6 +318,7 @@
             this.Name = "Form6";
             this.Text = "Form6";
             ((System.ComponentModel.ISupportInitialize)(this.dgvReccom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -291,5 +344,9 @@
         private Label lbKetUangAwal;
         private Label lblKetJangkaWaktu;
         private Label lbKetTabungan;
+        private PictureBox pictureBox1;
+        private Label lblKetDanaMasuk;
+        private Label lbDateMasuk;
+        private DateTimePicker dtpDanaMasuk;
     }
 }
