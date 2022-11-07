@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Npgsql;
+using System.Data;
 
 namespace Duitku
 {
@@ -22,10 +24,13 @@ namespace Duitku
         {
             InitializeComponent();
         }
+        private NpgsqlConnection conn;
+        string connstring = "Host=localhost;Port=5432;username=postgres;Password=widhi191;Database=duitkudb";
 
-        private void Form4_Load(object sender, EventArgs e)
+
+        public void Form4_Load(object sender, EventArgs e)
         {
-
+            conn = new NpgsqlConnection(connstring);
         }
         private void tbEmail_TextChanged(object sender, EventArgs e)
         {
@@ -172,9 +177,12 @@ namespace Duitku
             this.Controls.Add(this.tbEmail);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Name = "Form4";
+            this.Load += new System.EventHandler(this.Form4_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
+
+
     }
 }
