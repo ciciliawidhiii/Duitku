@@ -51,25 +51,29 @@
             this.lblKetDanaMasuk = new System.Windows.Forms.Label();
             this.lbDateMasuk = new System.Windows.Forms.Label();
             this.dtpDanaMasuk = new System.Windows.Forms.DateTimePicker();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReccom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // tbUangAwal
             // 
-            this.tbUangAwal.Location = new System.Drawing.Point(153, 180);
+            this.tbUangAwal.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbUangAwal.Location = new System.Drawing.Point(162, 180);
             this.tbUangAwal.Name = "tbUangAwal";
-            this.tbUangAwal.Size = new System.Drawing.Size(262, 31);
+            this.tbUangAwal.Size = new System.Drawing.Size(262, 42);
             this.tbUangAwal.TabIndex = 0;
             // 
             // llIncome
             // 
             this.llIncome.AutoSize = true;
-            this.llIncome.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.llIncome.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.llIncome.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.llIncome.Location = new System.Drawing.Point(698, 31);
             this.llIncome.Name = "llIncome";
-            this.llIncome.Size = new System.Drawing.Size(85, 23);
+            this.llIncome.Size = new System.Drawing.Size(86, 23);
             this.llIncome.TabIndex = 13;
             this.llIncome.TabStop = true;
             this.llIncome.Text = "Income";
@@ -77,7 +81,7 @@
             // llHome
             // 
             this.llHome.AutoSize = true;
-            this.llHome.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.llHome.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.llHome.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.llHome.Location = new System.Drawing.Point(427, 31);
             this.llHome.Name = "llHome";
@@ -131,9 +135,10 @@
             // 
             // tbJangkaWaktu
             // 
-            this.tbJangkaWaktu.Location = new System.Drawing.Point(153, 343);
+            this.tbJangkaWaktu.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbJangkaWaktu.Location = new System.Drawing.Point(162, 343);
             this.tbJangkaWaktu.Name = "tbJangkaWaktu";
-            this.tbJangkaWaktu.Size = new System.Drawing.Size(262, 31);
+            this.tbJangkaWaktu.Size = new System.Drawing.Size(262, 42);
             this.tbJangkaWaktu.TabIndex = 16;
             // 
             // label2
@@ -160,9 +165,10 @@
             // 
             // tbTabungan
             // 
-            this.tbTabungan.Location = new System.Drawing.Point(153, 513);
+            this.tbTabungan.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbTabungan.Location = new System.Drawing.Point(162, 513);
             this.tbTabungan.Name = "tbTabungan";
-            this.tbTabungan.Size = new System.Drawing.Size(262, 31);
+            this.tbTabungan.Size = new System.Drawing.Size(262, 42);
             this.tbTabungan.TabIndex = 19;
             // 
             // btnAddFinance
@@ -201,11 +207,11 @@
             // llOutcome
             // 
             this.llOutcome.AutoSize = true;
-            this.llOutcome.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.llOutcome.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.llOutcome.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.llOutcome.Location = new System.Drawing.Point(950, 31);
             this.llOutcome.Name = "llOutcome";
-            this.llOutcome.Size = new System.Drawing.Size(104, 23);
+            this.llOutcome.Size = new System.Drawing.Size(103, 23);
             this.llOutcome.TabIndex = 25;
             this.llOutcome.TabStop = true;
             this.llOutcome.Text = "Outcome";
@@ -215,7 +221,7 @@
             this.lbKetUangAwal.AutoSize = true;
             this.lbKetUangAwal.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.lbKetUangAwal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lbKetUangAwal.Location = new System.Drawing.Point(153, 223);
+            this.lbKetUangAwal.Location = new System.Drawing.Point(162, 228);
             this.lbKetUangAwal.Name = "lbKetUangAwal";
             this.lbKetUangAwal.Size = new System.Drawing.Size(367, 19);
             this.lbKetUangAwal.TabIndex = 26;
@@ -226,7 +232,7 @@
             this.lblKetJangkaWaktu.AutoSize = true;
             this.lblKetJangkaWaktu.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.lblKetJangkaWaktu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblKetJangkaWaktu.Location = new System.Drawing.Point(153, 386);
+            this.lblKetJangkaWaktu.Location = new System.Drawing.Point(162, 388);
             this.lblKetJangkaWaktu.Name = "lblKetJangkaWaktu";
             this.lblKetJangkaWaktu.Size = new System.Drawing.Size(459, 19);
             this.lblKetJangkaWaktu.TabIndex = 27;
@@ -279,11 +285,32 @@
             // 
             this.dtpDanaMasuk.CalendarForeColor = System.Drawing.Color.Black;
             this.dtpDanaMasuk.CalendarTitleForeColor = System.Drawing.Color.Black;
-            this.dtpDanaMasuk.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpDanaMasuk.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dtpDanaMasuk.Location = new System.Drawing.Point(153, 671);
             this.dtpDanaMasuk.Name = "dtpDanaMasuk";
-            this.dtpDanaMasuk.Size = new System.Drawing.Size(297, 27);
+            this.dtpDanaMasuk.Size = new System.Drawing.Size(419, 37);
             this.dtpDanaMasuk.TabIndex = 41;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(25, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(80, 75);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 44;
+            this.pictureBox2.TabStop = false;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.IndianRed;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(111, 31);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(124, 49);
+            this.guna2HtmlLabel1.TabIndex = 45;
+            this.guna2HtmlLabel1.Text = "Duitku";
             // 
             // Form6
             // 
@@ -292,6 +319,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1418, 968);
+            this.Controls.Add(this.guna2HtmlLabel1);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lblKetDanaMasuk);
             this.Controls.Add(this.lbDateMasuk);
             this.Controls.Add(this.dtpDanaMasuk);
@@ -317,8 +346,10 @@
             this.DoubleBuffered = true;
             this.Name = "Form6";
             this.Text = "Form6";
+            this.Load += new System.EventHandler(this.Form6_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvReccom)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -348,5 +379,7 @@
         private Label lblKetDanaMasuk;
         private Label lbDateMasuk;
         private DateTimePicker dtpDanaMasuk;
+        private PictureBox pictureBox2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
     }
 }

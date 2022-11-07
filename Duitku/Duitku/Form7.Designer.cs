@@ -40,9 +40,10 @@
             this.lbDateKeluar = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnAddOut = new System.Windows.Forms.Button();
             this.lblRiwayatDanaKeluar = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnAddOut = new Guna.UI2.WinForms.Guna2Button();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -50,11 +51,11 @@
             // llOutcome
             // 
             this.llOutcome.AutoSize = true;
-            this.llOutcome.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.llOutcome.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.llOutcome.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.llOutcome.Location = new System.Drawing.Point(950, 31);
             this.llOutcome.Name = "llOutcome";
-            this.llOutcome.Size = new System.Drawing.Size(104, 23);
+            this.llOutcome.Size = new System.Drawing.Size(121, 28);
             this.llOutcome.TabIndex = 28;
             this.llOutcome.TabStop = true;
             this.llOutcome.Text = "Outcome";
@@ -62,11 +63,11 @@
             // llIncome
             // 
             this.llIncome.AutoSize = true;
-            this.llIncome.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.llIncome.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.llIncome.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.llIncome.Location = new System.Drawing.Point(698, 31);
             this.llIncome.Name = "llIncome";
-            this.llIncome.Size = new System.Drawing.Size(85, 23);
+            this.llIncome.Size = new System.Drawing.Size(101, 28);
             this.llIncome.TabIndex = 27;
             this.llIncome.TabStop = true;
             this.llIncome.Text = "Income";
@@ -74,20 +75,21 @@
             // llHome
             // 
             this.llHome.AutoSize = true;
-            this.llHome.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.llHome.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.llHome.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.llHome.Location = new System.Drawing.Point(427, 31);
             this.llHome.Name = "llHome";
-            this.llHome.Size = new System.Drawing.Size(69, 23);
+            this.llHome.Size = new System.Drawing.Size(81, 28);
             this.llHome.TabIndex = 26;
             this.llHome.TabStop = true;
             this.llHome.Text = "Home";
             // 
             // tbPengeluaran
             // 
+            this.tbPengeluaran.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tbPengeluaran.Location = new System.Drawing.Point(192, 167);
             this.tbPengeluaran.Name = "tbPengeluaran";
-            this.tbPengeluaran.Size = new System.Drawing.Size(289, 31);
+            this.tbPengeluaran.Size = new System.Drawing.Size(289, 42);
             this.tbPengeluaran.TabIndex = 29;
             // 
             // lbPengeluaran
@@ -127,10 +129,10 @@
             // 
             this.dtpDanaKeluar.CalendarForeColor = System.Drawing.Color.Black;
             this.dtpDanaKeluar.CalendarTitleForeColor = System.Drawing.Color.Black;
-            this.dtpDanaKeluar.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpDanaKeluar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dtpDanaKeluar.Location = new System.Drawing.Point(817, 168);
             this.dtpDanaKeluar.Name = "dtpDanaKeluar";
-            this.dtpDanaKeluar.Size = new System.Drawing.Size(297, 27);
+            this.dtpDanaKeluar.Size = new System.Drawing.Size(444, 37);
             this.dtpDanaKeluar.TabIndex = 33;
             // 
             // lbDateKeluar
@@ -165,18 +167,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(1049, 413);
             this.dataGridView1.TabIndex = 36;
             // 
-            // btnAddOut
-            // 
-            this.btnAddOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnAddOut.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnAddOut.ForeColor = System.Drawing.Color.White;
-            this.btnAddOut.Location = new System.Drawing.Point(618, 265);
-            this.btnAddOut.Name = "btnAddOut";
-            this.btnAddOut.Size = new System.Drawing.Size(211, 62);
-            this.btnAddOut.TabIndex = 37;
-            this.btnAddOut.Text = "Add";
-            this.btnAddOut.UseVisualStyleBackColor = false;
-            // 
             // lblRiwayatDanaKeluar
             // 
             this.lblRiwayatDanaKeluar.AutoSize = true;
@@ -198,15 +188,43 @@
             this.pictureBox1.TabIndex = 39;
             this.pictureBox1.TabStop = false;
             // 
+            // btnAddOut
+            // 
+            this.btnAddOut.BorderRadius = 30;
+            this.btnAddOut.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddOut.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddOut.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddOut.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAddOut.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnAddOut.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAddOut.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnAddOut.Location = new System.Drawing.Point(192, 254);
+            this.btnAddOut.Name = "btnAddOut";
+            this.btnAddOut.Size = new System.Drawing.Size(270, 68);
+            this.btnAddOut.TabIndex = 40;
+            this.btnAddOut.Text = "Add";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.IndianRed;
+            this.label2.Location = new System.Drawing.Point(167, 53);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(141, 47);
+            this.label2.TabIndex = 41;
+            this.label2.Text = "Duitku";
+            // 
             // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1418, 968);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnAddOut);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblRiwayatDanaKeluar);
-            this.Controls.Add(this.btnAddOut);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbDateKeluar);
@@ -240,8 +258,9 @@
         private Label lbDateKeluar;
         private Label label1;
         private DataGridView dataGridView1;
-        private Button btnAddOut;
         private Label lblRiwayatDanaKeluar;
         private PictureBox pictureBox1;
+        private Guna.UI2.WinForms.Guna2Button btnAddOut;
+        private Label label2;
     }
 }
