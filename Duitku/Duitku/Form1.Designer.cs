@@ -122,6 +122,7 @@
             this.tbPassword.Size = new System.Drawing.Size(534, 57);
             this.tbPassword.TabIndex = 7;
             this.tbPassword.Text = "********";
+            this.tbPassword.TextChanged += new System.EventHandler(this.tbPassword_TextChanged);
             // 
             // btnLogin
             // 

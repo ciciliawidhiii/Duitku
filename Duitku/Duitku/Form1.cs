@@ -19,7 +19,8 @@ namespace Duitku
 
         private void tbEmail_TextChanged(object sender, EventArgs e)
         {
-
+            User emil = new User();
+            emil.Email = tbEmail.Text;
         }
 
         private void guna2HtmlLabel1_Click(object sender, EventArgs e)
@@ -33,7 +34,11 @@ namespace Duitku
             Form2 f2 = new Form2();
             f2.ShowDialog();
         }
-
+        private void tbPassword_TextChanged(object sender, EventArgs e)
+        {
+            User pw = new User();
+            pw.Password = tbPassword.Text;
+        }
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();

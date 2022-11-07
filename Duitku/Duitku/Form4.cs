@@ -27,6 +27,23 @@ namespace Duitku
         {
 
         }
+        private void tbEmail_TextChanged(object sender, EventArgs e)
+        {
+            User emil = new User();
+            emil.userName = tbEmail.Text;
+        }
+
+        private void tbUserName_TextChanged(object sender, EventArgs e)
+        {
+            User uname = new User();
+            uname.userName = tbUserName.Text;
+        }
+
+        private void tbPassword_TextChanged(object sender, EventArgs e)
+        {
+            User pw = new User();
+            pw.userName = tbPassword.Text;
+        }
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             string msg = "Signed Up successfully!";
@@ -39,8 +56,6 @@ namespace Duitku
         {
 
         }
-
-        
         private void InitializeComponent()
         {
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -81,6 +96,7 @@ namespace Duitku
             this.tbUserName.Name = "tbUserName";
             this.tbUserName.Size = new System.Drawing.Size(512, 42);
             this.tbUserName.TabIndex = 2;
+            this.tbUserName.TextChanged += new System.EventHandler(this.tbUserName_TextChanged);
             // 
             // tbPassword
             // 
@@ -89,6 +105,7 @@ namespace Duitku
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(512, 42);
             this.tbPassword.TabIndex = 3;
+            this.tbPassword.TextChanged += new System.EventHandler(this.tbPassword_TextChanged);
             // 
             // guna2HtmlLabel2
             // 
@@ -157,11 +174,6 @@ namespace Duitku
             this.Name = "Form4";
             this.ResumeLayout(false);
             this.PerformLayout();
-
-        }
-
-        private void tbEmail_TextChanged(object sender, EventArgs e)
-        {
 
         }
     }
