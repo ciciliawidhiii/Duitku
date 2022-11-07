@@ -197,6 +197,7 @@
             this.btnAddFinance.TabIndex = 22;
             this.btnAddFinance.Text = "Add";
             this.btnAddFinance.UseVisualStyleBackColor = false;
+            this.btnAddFinance.Click += new System.EventHandler(this.btnAddFinance_Click_1);
             // 
             // label3
             // 

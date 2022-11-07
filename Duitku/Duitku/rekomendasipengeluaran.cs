@@ -12,7 +12,7 @@ namespace Duitku
 
         public int duitRec
         {
-            get { return _duitRec;}
+            get { return _duitRec; }
             set { _duitRec = value; }
         }
 
@@ -20,11 +20,11 @@ namespace Duitku
         {
             int duitRec;
             pemasukan n = new pemasukan();
-            masuk = n.duitAwal;
+            n.duitAwal = masuk;
             tabungan m = new tabungan();
-            tabung = m.duitTabung;
+            m.duitTabung = tabung;
             jangkawaktu k = new jangkawaktu();
-            jawaktu = k.waktuDuit;
+            k.waktuDuit = jawaktu;
             duitRec = ((masuk - tabung) / jawaktu);
             return duitRec;
         }

@@ -59,5 +59,11 @@ namespace Duitku
         {
 
         }
+
+        private void tbPengeluaran_TextChanged(object sender, EventArgs e)
+        {
+            pengeluaran keluar = new pengeluaran();
+            keluar.duitKeluar = Convert.ToInt32(tbPengeluaran.Text);
+        }
     }
 }

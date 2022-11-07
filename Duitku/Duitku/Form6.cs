@@ -22,7 +22,6 @@ namespace Duitku
         {
 
         }
-
         private void llHome_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
@@ -39,31 +38,34 @@ namespace Duitku
 
         private void tbUangAwal_TextChanged(object sender, EventArgs e)
         {
-            pemasukan n = new pemasukan();
-            n.duitAwal = Convert.ToInt32(tbUangAwal.Text);
+
         }
 
         private void tbJangkaWaktu_TextChanged(object sender, EventArgs e)
         {
-            jangkawaktu k = new jangkawaktu();
-            k.waktuDuit = Convert.ToInt32(tbJangkaWaktu.Text);
+
         }
 
         private void tbTabungan_TextChanged(object sender, EventArgs e)
         {
-            tabungan m = new tabungan();
-            m.duitTabung = Convert.ToInt32(tbTabungan.Text);
+
         }
 
         private void dtpDanaMasuk_ValueChanged(object sender, EventArgs e)
         {
 
         }
-
         private void lblRekomendasi_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnAddFinance_Click_1(object sender, EventArgs e)
+        {
             rekomendasipengeluaran uangRek = new rekomendasipengeluaran();
-            
+            int reklagi = uangRek.reccomendation(Convert.ToInt32(tbUangAwal.Text), Convert.ToInt32(tbTabungan.Text), Convert.ToInt32(tbJangkaWaktu.Text));
+            string msgrek = "Rp" + Convert.ToString(reklagi) + ",00/hari";
+            lblRekomendasi.Text = msgrek;
         }
     }
 }

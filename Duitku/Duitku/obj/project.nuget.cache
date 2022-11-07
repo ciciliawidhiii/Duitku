@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wvWjekvaPdLMeWa1QR/ezwFXsJM2lbRd9faaA2I6UO31s5ixWbJKlLwIFN21N9GkNzWu04IRRfALH9fBTt4yHw==",
+  "dgSpecHash": "1LjcpDPgDYUY0w38kx62HlJUfeXmoUjPo0esilYCueLyvIgk4CxvaSq4n490kjds1WblNW9ixzgSrNzc58Mu0A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Asus\\source\\repos\\DuitkuFix2\\Duitku\\Duitku\\Duitku.csproj",
+  "projectFilePath": "C:\\Users\\Asus\\Documents\\GitHub\\Duitkuuu\\Duitku\\Duitku\\Duitku\\Duitku.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Asus\\.nuget\\packages\\guna.ui2.winforms\\2.0.3.5\\guna.ui2.winforms.2.0.3.5.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\npgsql\\6.0.7\\npgsql.6.0.7.nupkg.sha512",

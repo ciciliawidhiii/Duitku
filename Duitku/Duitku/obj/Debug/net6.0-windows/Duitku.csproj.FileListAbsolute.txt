@@ -125,3 +125,4 @@ C:\Users\Asus\source\repos\DuitkuFix2\Duitku\Duitku\obj\Debug\net6.0-windows\Dui
 C:\Users\Asus\source\repos\DuitkuFix2\Duitku\Duitku\obj\Debug\net6.0-windows\Duitku.genruntimeconfig.cache
 C:\Users\Asus\source\repos\DuitkuFix2\Duitku\Duitku\obj\Debug\net6.0-windows\ref\Duitku.dll
 D:\Bismilla\Duitku\Duitku\Duitku\bin\Debug\net6.0-windows\Npgsql.dll
+C:\Users\Asus\Documents\GitHub\Duitkuuu\Duitku\Duitku\Duitku\bin\Debug\net6.0-windows\Npgsql.dll
