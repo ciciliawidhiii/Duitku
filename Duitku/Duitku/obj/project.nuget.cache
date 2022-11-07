@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4mL9oBMIPwfFA279kLbsZFKOR3NMIDintZLr+6hG7PvUowYO+dAIQ09wRcw/KeTbEnvfFcLRXuZWPb6hnqwg+Q==",
+  "dgSpecHash": "BdyB3QmbIxYBEZk8VQ/QTEg51Yp3BFUuD1pJCkl8Swqufw9A2ay6d9bmSG5NHAGtMiZ0KwPSLcZmTjt8xwpY+A==",
   "success": true,
-  "projectFilePath": "D:\\umar\\Duitku\\Duitku\\Duitku\\Duitku.csproj",
+  "projectFilePath": "C:\\Users\\Asus\\Documents\\GitHub\\Duitkuuu\\Duitku\\Duitku\\Duitku\\Duitku.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Asus\\.nuget\\packages\\guna.ui2.winforms\\2.0.3.5\\guna.ui2.winforms.2.0.3.5.nupkg.sha512"
   ],
