@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Bismilla\\Duitku\\Duitku\\Duitku\\Duitku.csproj": {}
+    "C:\\Users\\Asus\\source\\repos\\DuitkuFix2\\Duitku\\Duitku\\Duitku.csproj": {}
   },
   "projects": {
-    "D:\\Bismilla\\Duitku\\Duitku\\Duitku\\Duitku.csproj": {
+    "C:\\Users\\Asus\\source\\repos\\DuitkuFix2\\Duitku\\Duitku\\Duitku.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Bismilla\\Duitku\\Duitku\\Duitku\\Duitku.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\source\\repos\\DuitkuFix2\\Duitku\\Duitku\\Duitku.csproj",
         "projectName": "Duitku",
-        "projectPath": "D:\\Bismilla\\Duitku\\Duitku\\Duitku\\Duitku.csproj",
+        "projectPath": "C:\\Users\\Asus\\source\\repos\\DuitkuFix2\\Duitku\\Duitku\\Duitku.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "D:\\Bismilla\\Duitku\\Duitku\\Duitku\\obj\\",
+        "outputPath": "C:\\Users\\Asus\\source\\repos\\DuitkuFix2\\Duitku\\Duitku\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

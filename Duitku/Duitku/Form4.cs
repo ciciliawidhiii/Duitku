@@ -57,7 +57,7 @@ namespace Duitku
             try
             {
                 conn.Open();
-                sql = @"select * from st_insert(:_user_email,:_user_password,:_user_name)";
+                sql = @"select * from st_insert_user(:_user_email,:_user_password,:_user_name)";
                 cmd = new NpgsqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("_user_email", tbEmail.Text);
                 cmd.Parameters.AddWithValue("_user_name", tbUserName.Text);
