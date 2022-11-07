@@ -16,5 +16,27 @@ namespace Duitku
         {
             InitializeComponent();
         }
+
+        private void dtpDanaKeluar_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAddOut_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void llIncome_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form6 f6 = new Form6();
+            f6.ShowDialog();
+        }
+
+        private void llHome_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form2 f2 = new Form2();
+            f2.ShowDialog();
+        }
     }
 }

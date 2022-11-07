@@ -32,5 +32,17 @@ namespace Duitku
             Form5 f5 = new Form5();
             f5.ShowDialog();
         }
+
+        private void llFinance_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form7 f7 = new Form7();
+            f7.ShowDialog();
+        }
+
+        private void llCalendar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form6 f6 = new Form6();
+            f6.ShowDialog();
+        }
     }
 }
