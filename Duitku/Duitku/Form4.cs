@@ -72,6 +72,7 @@ namespace Duitku
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(512, 42);
             this.tbEmail.TabIndex = 1;
+            this.tbEmail.TextChanged += new System.EventHandler(this.tbEmail_TextChanged);
             // 
             // tbUserName
             // 
@@ -156,6 +157,11 @@ namespace Duitku
             this.Name = "Form4";
             this.ResumeLayout(false);
             this.PerformLayout();
+
+        }
+
+        private void tbEmail_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

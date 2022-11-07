@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Duitku
 {
@@ -34,6 +35,29 @@ namespace Duitku
             this.Hide();
             Form7 f7 = new Form7();
             f7.ShowDialog();
+        }
+
+        private void tbUangAwal_TextChanged(object sender, EventArgs e)
+        {
+            pemasukan n = new pemasukan();
+            n.duitAwal = Convert.ToInt32(tbUangAwal.Text);
+        }
+
+        private void tbJangkaWaktu_TextChanged(object sender, EventArgs e)
+        {
+            jangkawaktu k = new jangkawaktu();
+            k.waktuDuit = Convert.ToInt32(tbJangkaWaktu.Text);
+        }
+
+        private void tbTabungan_TextChanged(object sender, EventArgs e)
+        {
+            tabungan m = new tabungan();
+            m.duitTabung = Convert.ToInt32(tbTabungan.Text);
+        }
+
+        private void dtpDanaMasuk_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
