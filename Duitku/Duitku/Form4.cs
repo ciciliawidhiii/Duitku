@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Npgsql;
 using System.Data;
+using System.Xml.Linq;
 
 namespace Duitku
 {
@@ -26,7 +27,9 @@ namespace Duitku
         }
         private NpgsqlConnection conn;
         string connstring = "Host=localhost;Port=5432;username=postgres;Password=widhi191;Database=duitkudb";
-
+        public DataTable dt;
+        public static NpgsqlCommand cmd;
+        private string sql = null;
 
         public void Form4_Load(object sender, EventArgs e)
         {
@@ -51,6 +54,25 @@ namespace Duitku
         }
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            try
+            {
+                conn.Open();
+                sql = @"select * from st_insert(:_user_email,:_user_password,:_user_name)";
+                cmd = new NpgsqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("_user_email", tbEmail.Text);
+                cmd.Parameters.AddWithValue("_user_name", tbUserName.Text);
+                cmd.Parameters.AddWithValue("_user_password", tbPassword.Text);
+                if ((int)cmd.ExecuteScalar() == 1)
+                {
+                    MessageBox.Show("Data Users Berhasil diinputkan", "Well done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    conn.Close();
+                    
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error : " + ex.Message, "Insert FAIL!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             string msg = "Signed Up successfully!";
             MessageBox.Show(msg + MessageBoxButtons.OK + MessageBoxIcon.Information);
             this.Hide();
