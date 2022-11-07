@@ -41,31 +41,34 @@
             this.llCalendar = new System.Windows.Forms.LinkLabel();
             this.llFinance = new System.Windows.Forms.LinkLabel();
             this.btnLogout = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRekomendasiH)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPengeluaranH)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSisaH)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(104, 114);
+            this.label1.Location = new System.Drawing.Point(130, 142);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(322, 74);
+            this.label1.Size = new System.Drawing.Size(385, 87);
             this.label1.TabIndex = 0;
             this.label1.Text = "Hello, Abi!";
             // 
             // dgvRekomendasiH
             // 
             this.dgvRekomendasiH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRekomendasiH.Location = new System.Drawing.Point(114, 280);
+            this.dgvRekomendasiH.Location = new System.Drawing.Point(142, 350);
             this.dgvRekomendasiH.Margin = new System.Windows.Forms.Padding(2);
             this.dgvRekomendasiH.Name = "dgvRekomendasiH";
             this.dgvRekomendasiH.RowHeadersWidth = 62;
             this.dgvRekomendasiH.RowTemplate.Height = 33;
-            this.dgvRekomendasiH.Size = new System.Drawing.Size(288, 66);
+            this.dgvRekomendasiH.Size = new System.Drawing.Size(360, 82);
             this.dgvRekomendasiH.TabIndex = 1;
             this.dgvRekomendasiH.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -74,10 +77,10 @@
             this.lbRekomendasi.AutoSize = true;
             this.lbRekomendasi.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbRekomendasi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.lbRekomendasi.Location = new System.Drawing.Point(114, 238);
+            this.lbRekomendasi.Location = new System.Drawing.Point(142, 298);
             this.lbRekomendasi.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbRekomendasi.Name = "lbRekomendasi";
-            this.lbRekomendasi.Size = new System.Drawing.Size(363, 40);
+            this.lbRekomendasi.Size = new System.Drawing.Size(436, 49);
             this.lbRekomendasi.TabIndex = 2;
             this.lbRekomendasi.Text = "Rekomendasi Hari ini ";
             // 
@@ -86,10 +89,10 @@
             this.lbPengeluaran.AutoSize = true;
             this.lbPengeluaran.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbPengeluaran.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.lbPengeluaran.Location = new System.Drawing.Point(114, 396);
+            this.lbPengeluaran.Location = new System.Drawing.Point(142, 495);
             this.lbPengeluaran.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbPengeluaran.Name = "lbPengeluaran";
-            this.lbPengeluaran.Size = new System.Drawing.Size(238, 40);
+            this.lbPengeluaran.Size = new System.Drawing.Size(283, 49);
             this.lbPengeluaran.TabIndex = 3;
             this.lbPengeluaran.Text = "Pengeluaran ";
             this.lbPengeluaran.Click += new System.EventHandler(this.label2_Click);
@@ -97,12 +100,12 @@
             // dgvPengeluaranH
             // 
             this.dgvPengeluaranH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPengeluaranH.Location = new System.Drawing.Point(114, 438);
+            this.dgvPengeluaranH.Location = new System.Drawing.Point(142, 548);
             this.dgvPengeluaranH.Margin = new System.Windows.Forms.Padding(2);
             this.dgvPengeluaranH.Name = "dgvPengeluaranH";
             this.dgvPengeluaranH.RowHeadersWidth = 62;
             this.dgvPengeluaranH.RowTemplate.Height = 33;
-            this.dgvPengeluaranH.Size = new System.Drawing.Size(288, 66);
+            this.dgvPengeluaranH.Size = new System.Drawing.Size(360, 82);
             this.dgvPengeluaranH.TabIndex = 4;
             // 
             // lblSisa
@@ -110,44 +113,45 @@
             this.lblSisa.AutoSize = true;
             this.lblSisa.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblSisa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.lblSisa.Location = new System.Drawing.Point(114, 558);
+            this.lblSisa.Location = new System.Drawing.Point(142, 698);
             this.lblSisa.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSisa.Name = "lblSisa";
-            this.lblSisa.Size = new System.Drawing.Size(174, 40);
+            this.lblSisa.Size = new System.Drawing.Size(210, 49);
             this.lblSisa.TabIndex = 5;
             this.lblSisa.Text = "Sisa Uang";
             // 
             // dgvSisaH
             // 
             this.dgvSisaH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSisaH.Location = new System.Drawing.Point(114, 606);
+            this.dgvSisaH.Location = new System.Drawing.Point(142, 758);
             this.dgvSisaH.Margin = new System.Windows.Forms.Padding(2);
             this.dgvSisaH.Name = "dgvSisaH";
             this.dgvSisaH.RowHeadersWidth = 62;
             this.dgvSisaH.RowTemplate.Height = 33;
-            this.dgvSisaH.Size = new System.Drawing.Size(288, 66);
+            this.dgvSisaH.Size = new System.Drawing.Size(360, 82);
             this.dgvSisaH.TabIndex = 6;
             // 
             // lblProfilH
             // 
             this.lblProfilH.AutoSize = true;
             this.lblProfilH.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblProfilH.Location = new System.Drawing.Point(964, 90);
+            this.lblProfilH.Location = new System.Drawing.Point(1205, 112);
             this.lblProfilH.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblProfilH.Name = "lblProfilH";
-            this.lblProfilH.Size = new System.Drawing.Size(81, 20);
+            this.lblProfilH.Size = new System.Drawing.Size(97, 21);
             this.lblProfilH.TabIndex = 7;
             this.lblProfilH.Text = "Abi Mana";
+            this.lblProfilH.Click += new System.EventHandler(this.lblProfilH_Click);
             // 
             // llHome
             // 
             this.llHome.AutoSize = true;
-            this.llHome.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.llHome.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.llHome.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.llHome.Location = new System.Drawing.Point(367, 30);
+            this.llHome.Location = new System.Drawing.Point(457, 39);
             this.llHome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.llHome.Name = "llHome";
-            this.llHome.Size = new System.Drawing.Size(59, 21);
+            this.llHome.Size = new System.Drawing.Size(96, 34);
             this.llHome.TabIndex = 8;
             this.llHome.TabStop = true;
             this.llHome.Text = "Home";
@@ -155,12 +159,12 @@
             // llCalendar
             // 
             this.llCalendar.AutoSize = true;
-            this.llCalendar.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.llCalendar.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.llCalendar.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.llCalendar.Location = new System.Drawing.Point(541, 30);
+            this.llCalendar.Location = new System.Drawing.Point(674, 39);
             this.llCalendar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.llCalendar.Name = "llCalendar";
-            this.llCalendar.Size = new System.Drawing.Size(73, 21);
+            this.llCalendar.Size = new System.Drawing.Size(120, 34);
             this.llCalendar.TabIndex = 9;
             this.llCalendar.TabStop = true;
             this.llCalendar.Text = "Income";
@@ -169,12 +173,12 @@
             // llFinance
             // 
             this.llFinance.AutoSize = true;
-            this.llFinance.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.llFinance.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.llFinance.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.llFinance.Location = new System.Drawing.Point(730, 30);
+            this.llFinance.Location = new System.Drawing.Point(910, 39);
             this.llFinance.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.llFinance.Name = "llFinance";
-            this.llFinance.Size = new System.Drawing.Size(90, 21);
+            this.llFinance.Size = new System.Drawing.Size(144, 34);
             this.llFinance.TabIndex = 10;
             this.llFinance.TabStop = true;
             this.llFinance.Text = "Outcome";
@@ -189,23 +193,46 @@
             this.btnLogout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnLogout.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(1016, 661);
+            this.btnLogout.Location = new System.Drawing.Point(1270, 826);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnLogout.Size = new System.Drawing.Size(98, 104);
+            this.btnLogout.Size = new System.Drawing.Size(122, 130);
             this.btnLogout.TabIndex = 11;
             this.btnLogout.Text = "Logout";
             this.btnLogout.Click += new System.EventHandler(this.guna2CircleButton1_Click);
             // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.IndianRed;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(126, 39);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(124, 49);
+            this.guna2HtmlLabel1.TabIndex = 46;
+            this.guna2HtmlLabel1.Text = "Duitku";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Duitku.Properties.Resources.pigpng;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(108, 98);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 47;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1134, 774);
+            this.ClientSize = new System.Drawing.Size(1418, 968);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.llFinance);
             this.Controls.Add(this.llCalendar);
@@ -225,6 +252,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvRekomendasiH)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPengeluaranH)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSisaH)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,5 +272,7 @@
         private LinkLabel llCalendar;
         private LinkLabel llFinance;
         private Guna.UI2.WinForms.Guna2CircleButton btnLogout;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private PictureBox pictureBox1;
     }
 }

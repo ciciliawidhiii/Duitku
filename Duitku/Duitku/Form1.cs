@@ -32,5 +32,11 @@ namespace Duitku
             Form2 f2 = new Form2();
             f2.ShowDialog();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form4 f4 = new Form4();
+            f4.ShowDialog();
+        }
     }
 }

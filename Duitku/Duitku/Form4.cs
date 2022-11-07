@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Duitku
 {
@@ -26,7 +27,17 @@ namespace Duitku
         {
 
         }
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            string msg = "Signed Up successfully!";
+            MessageBox.Show(msg + MessageBoxButtons.OK + MessageBoxIcon.Information);
+        }
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        
         private void InitializeComponent()
         {
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -124,6 +135,7 @@ namespace Duitku
             this.guna2Button1.Size = new System.Drawing.Size(270, 68);
             this.guna2Button1.TabIndex = 7;
             this.guna2Button1.Text = "Sign Up!";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // Form4
             // 
@@ -143,9 +155,5 @@ namespace Duitku
             this.PerformLayout();
 
         }
-
-        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
+}

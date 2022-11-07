@@ -44,5 +44,10 @@ namespace Duitku
             Form6 f6 = new Form6();
             f6.ShowDialog();
         }
+
+        private void lblProfilH_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
