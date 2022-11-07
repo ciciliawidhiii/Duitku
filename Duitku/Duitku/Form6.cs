@@ -59,5 +59,11 @@ namespace Duitku
         {
 
         }
+
+        private void lblRekomendasi_Click(object sender, EventArgs e)
+        {
+            rekomendasipengeluaran uangRek = new rekomendasipengeluaran();
+            
+        }
     }
 }

@@ -41,7 +41,6 @@
             this.lbTabungan = new System.Windows.Forms.Label();
             this.tbTabungan = new System.Windows.Forms.TextBox();
             this.btnAddFinance = new System.Windows.Forms.Button();
-            this.dgvReccom = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.llOutcome = new System.Windows.Forms.LinkLabel();
             this.lbKetUangAwal = new System.Windows.Forms.Label();
@@ -53,7 +52,7 @@
             this.dtpDanaMasuk = new System.Windows.Forms.DateTimePicker();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvReccom)).BeginInit();
+            this.lblRekomendasi = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -199,26 +198,15 @@
             this.btnAddFinance.Text = "Add";
             this.btnAddFinance.UseVisualStyleBackColor = false;
             // 
-            // dgvReccom
-            // 
-            this.dgvReccom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvReccom.Location = new System.Drawing.Point(861, 242);
-            this.dgvReccom.Margin = new System.Windows.Forms.Padding(2);
-            this.dgvReccom.Name = "dgvReccom";
-            this.dgvReccom.RowHeadersWidth = 62;
-            this.dgvReccom.RowTemplate.Height = 33;
-            this.dgvReccom.Size = new System.Drawing.Size(381, 225);
-            this.dgvReccom.TabIndex = 23;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.label3.Location = new System.Drawing.Point(868, 205);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(366, 34);
+            this.label3.Size = new System.Drawing.Size(364, 34);
             this.label3.TabIndex = 24;
             this.label3.Text = "Rekomendasi untuk Anda";
             // 
@@ -342,6 +330,18 @@
             this.guna2HtmlLabel1.TabIndex = 45;
             this.guna2HtmlLabel1.Text = "Duitku";
             // 
+            // lblRekomendasi
+            // 
+            this.lblRekomendasi.BackColor = System.Drawing.Color.Transparent;
+            this.lblRekomendasi.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblRekomendasi.ForeColor = System.Drawing.Color.IndianRed;
+            this.lblRekomendasi.Location = new System.Drawing.Point(882, 257);
+            this.lblRekomendasi.Name = "lblRekomendasi";
+            this.lblRekomendasi.Size = new System.Drawing.Size(93, 36);
+            this.lblRekomendasi.TabIndex = 46;
+            this.lblRekomendasi.Text = "Rp0,00";
+            this.lblRekomendasi.Click += new System.EventHandler(this.lblRekomendasi_Click);
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -349,6 +349,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1418, 968);
+            this.Controls.Add(this.lblRekomendasi);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lblKetDanaMasuk);
@@ -360,7 +361,6 @@
             this.Controls.Add(this.lbKetUangAwal);
             this.Controls.Add(this.llOutcome);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.dgvReccom);
             this.Controls.Add(this.btnAddFinance);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbTabungan);
@@ -378,7 +378,6 @@
             this.Name = "Form6";
             this.Text = "Form6";
             this.Load += new System.EventHandler(this.Form6_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvReccom)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -400,7 +399,6 @@
         private Label lbTabungan;
         private TextBox tbTabungan;
         private Button btnAddFinance;
-        private DataGridView dgvReccom;
         private Label label3;
         private LinkLabel llOutcome;
         private Label lbKetUangAwal;
@@ -412,5 +410,6 @@
         private DateTimePicker dtpDanaMasuk;
         private PictureBox pictureBox2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblRekomendasi;
     }
 }
