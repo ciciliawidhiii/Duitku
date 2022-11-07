@@ -33,6 +33,7 @@
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -68,10 +69,30 @@
             this.label1.ForeColor = System.Drawing.Color.IndianRed;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(796, 179);
+            this.label1.Size = new System.Drawing.Size(788, 177);
             this.label1.TabIndex = 1;
             this.label1.Text = "Terimakasih";
             this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.BorderColor = System.Drawing.Color.IndianRed;
+            this.guna2Button2.CustomBorderColor = System.Drawing.Color.IndianRed;
+            this.guna2Button2.CustomBorderThickness = new System.Windows.Forms.Padding(3);
+            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.guna2Button2.Font = new System.Drawing.Font("Goudy Old Style", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.guna2Button2.ForeColor = System.Drawing.Color.IndianRed;
+            this.guna2Button2.Location = new System.Drawing.Point(506, 532);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(0);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.Size = new System.Drawing.Size(429, 71);
+            this.guna2Button2.TabIndex = 2;
+            this.guna2Button2.Text = "Exit";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // Form3
             // 
@@ -81,6 +102,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1422, 882);
+            this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2Button1);
             this.DoubleBuffered = true;
@@ -99,5 +121,6 @@
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Label label1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
     }
 }

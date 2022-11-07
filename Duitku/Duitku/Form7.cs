@@ -29,14 +29,35 @@ namespace Duitku
 
         private void llIncome_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Hide();
             Form6 f6 = new Form6();
             f6.ShowDialog();
         }
 
         private void llHome_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Hide();
             Form2 f2 = new Form2();
             f2.ShowDialog();
+        }
+
+        private void llHome_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            Form2 f2 = new Form2();
+            f2.ShowDialog();
+        }
+
+        private void llIncome_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            Form6 f6 = new Form6();
+            f6.ShowDialog();
+        }
+
+        private void llOutcome_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
         }
     }
 }

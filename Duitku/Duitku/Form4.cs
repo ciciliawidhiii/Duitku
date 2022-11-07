@@ -31,6 +31,9 @@ namespace Duitku
         {
             string msg = "Signed Up successfully!";
             MessageBox.Show(msg + MessageBoxButtons.OK + MessageBoxIcon.Information);
+            this.Hide();
+            formLogin f1 = new formLogin();
+            f1.ShowDialog();
         }
         private void guna2HtmlLabel1_Click(object sender, EventArgs e)
         {

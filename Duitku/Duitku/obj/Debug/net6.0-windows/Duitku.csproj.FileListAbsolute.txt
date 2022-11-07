@@ -94,3 +94,6 @@ C:\Users\Asus\Documents\GitHub\Duitkuuu\Duitku\Duitku\Duitku\obj\Debug\net6.0-wi
 C:\Users\Asus\Documents\GitHub\Duitkuuu\Duitku\Duitku\Duitku\obj\Debug\net6.0-windows\Duitku.pdb
 C:\Users\Asus\Documents\GitHub\Duitkuuu\Duitku\Duitku\Duitku\obj\Debug\net6.0-windows\Duitku.genruntimeconfig.cache
 C:\Users\Asus\Documents\GitHub\Duitkuuu\Duitku\Duitku\Duitku\obj\Debug\net6.0-windows\ref\Duitku.dll
+D:\Bismilla\Duitku\Duitku\Duitku\obj\Debug\net6.0-windows\Duitku.Form4.resources
+D:\Bismilla\Duitku\Duitku\Duitku\obj\Debug\net6.0-windows\Duitku.Form6.resources
+D:\Bismilla\Duitku\Duitku\Duitku\obj\Debug\net6.0-windows\Duitku.Form7.resources

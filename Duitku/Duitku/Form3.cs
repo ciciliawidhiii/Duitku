@@ -23,6 +23,7 @@ namespace Duitku
         }
         private void guna2Button1_Click_1(object sender, EventArgs e)
         {
+            this.Hide();
             formLogin f1 = new formLogin();
             f1.ShowDialog();
         }
@@ -30,6 +31,11 @@ namespace Duitku
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

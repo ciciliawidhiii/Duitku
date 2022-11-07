@@ -29,23 +29,31 @@ namespace Duitku
 
         private void guna2CircleButton1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Form5 f5 = new Form5();
             f5.ShowDialog();
         }
 
         private void llFinance_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Hide();
             Form7 f7 = new Form7();
             f7.ShowDialog();
         }
 
         private void llCalendar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Hide();
             Form6 f6 = new Form6();
             f6.ShowDialog();
         }
 
         private void lblProfilH_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
         {
 
         }
