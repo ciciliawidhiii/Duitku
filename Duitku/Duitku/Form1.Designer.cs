@@ -122,7 +122,6 @@
             this.tbPassword.Size = new System.Drawing.Size(534, 57);
             this.tbPassword.TabIndex = 7;
             this.tbPassword.Text = "********";
-            this.tbPassword.TextChanged += new System.EventHandler(this.tbPassword_TextChanged);
             // 
             // btnLogin
             // 
@@ -173,8 +172,7 @@
             this.linkLabel1.TabIndex = 11;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Sign Up!";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
+            //
             // formLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);

@@ -17,11 +17,10 @@ namespace Duitku
         {
             InitializeComponent();
         }
-       
+
         private void formLogin_Load(object sender, EventArgs e)
         {
-            cn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=H:\Website\RegistrationAndLogin\Database.mdf;Integrated Security=True");
-            cn.Open();
+            conn = new NpgsqlConnection(connstring);
         }
 
         private void tbEmail_TextChanged(object sender, EventArgs e)
@@ -37,40 +36,36 @@ namespace Duitku
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (tbPassword.Text != string.Empty || tbEmail.Text != string.Empty)
+            try
             {
+                conn.Open();
+                sql = @"select * from u_login(:_useremail, :_userpassword)";
+                
+                cmd = new NpgsqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("_useremail", tbEmail.Text);
+                cmd.Parameters.AddWithValue("_userpassword", tbPassword.Text);
 
-                cmd = new SqlCommand("select * from tblLogin where username='" + tbEmail.Text + "' and password='" + tbPassword.Text + "'", cn);
-                dr = cmd.ExecuteReader();
-                if (dr.Read())
+                int result = (int)cmd.ExecuteScalar();
+                if(result ==1) //login success
                 {
-                    dr.Close();
+                    MessageBox.Show("Login Success, Welcome to Duitku!");
                     this.Hide();
                     Form2 f2 = new Form2();
                     f2.ShowDialog();
                 }
                 else
                 {
-                    dr.Close();
-                    MessageBox.Show("No Account avilable with this username and password ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Please check your email or password", "login fail", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    return;
                 }
-
+                conn.Close();
+                
             }
-            else
+                catch(Exception ex)
             {
-                MessageBox.Show("Please enter value in all field.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error:" + ex.Message, "FAIL!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                conn.Close();
             }
-        }
-        private void tbPassword_TextChanged(object sender, EventArgs e)
-        {
-            User pw = new User();
-            pw.Password = tbPassword.Text;
-        }
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            this.Hide();
-            Form4 f4 = new Form4();
-            f4.ShowDialog();
         }
     }
 }

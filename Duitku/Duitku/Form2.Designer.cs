@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblUser = new System.Windows.Forms.Label();
             this.dgvRekomendasiH = new System.Windows.Forms.DataGridView();
             this.lbRekomendasi = new System.Windows.Forms.Label();
             this.lbPengeluaran = new System.Windows.Forms.Label();
@@ -49,17 +49,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lblUser
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(130, 142);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(385, 87);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Hello, Abi!";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lblUser.AutoSize = true;
+            this.lblUser.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblUser.Location = new System.Drawing.Point(130, 142);
+            this.lblUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(385, 87);
+            this.lblUser.TabIndex = 0;
+            this.lblUser.Text = "Hello, Abi!";
+            this.lblUser.Click += new System.EventHandler(this.label1_Click);
             // 
             // dgvRekomendasiH
             // 
@@ -248,7 +248,7 @@
             this.Controls.Add(this.lbPengeluaran);
             this.Controls.Add(this.lbRekomendasi);
             this.Controls.Add(this.dgvRekomendasiH);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblUser);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form2";
@@ -264,7 +264,7 @@
 
         #endregion
 
-        private Label label1;
+        private Label lblUser;
         private DataGridView dgvRekomendasiH;
         private Label lbRekomendasi;
         private Label lbPengeluaran;
