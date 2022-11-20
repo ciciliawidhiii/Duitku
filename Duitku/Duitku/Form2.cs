@@ -16,8 +16,6 @@ namespace Duitku
         {
             InitializeComponent();
         }
-     
-
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -64,7 +62,6 @@ namespace Duitku
         {
             //Console.WriteLine("Hello, " + );
         }
-
 
     }
 }

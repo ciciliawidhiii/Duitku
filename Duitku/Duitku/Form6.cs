@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Duitku
@@ -17,10 +19,15 @@ namespace Duitku
         {
             InitializeComponent();
         }
+        private NpgsqlConnection conn;
+        string connstring = "Host=localhost;Port=5432;username=postgres;Password=widhi191;Database=duitkudb";
+        public DataTable dt;
+        public static NpgsqlCommand cmd;
+        private string sql = null;
 
         private void Form6_Load(object sender, EventArgs e)
         {
-
+            conn = new NpgsqlConnection(connstring);
         }
         private void llHome_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -66,6 +73,27 @@ namespace Duitku
             int reklagi = uangRek.reccomendation(Convert.ToInt32(tbUangAwal.Text), Convert.ToInt32(tbTabungan.Text), Convert.ToInt32(tbJangkaWaktu.Text));
             string msgrek = "Rp" + Convert.ToString(reklagi) + ",00/hari";
             lblRekomendasi.Text = msgrek;
+            try
+            {
+                conn.Open();
+                sql = @"select * from dt_insert_income(:_uangmasuk::integer,:_jangkawaktu::integer,:_tabungan::integer, :_tanggal::date, :_rekomendasi::character varying)";
+                cmd = new NpgsqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("_uangmasuk", tbUangAwal.Text);
+                cmd.Parameters.AddWithValue("_jangkawaktu", tbJangkaWaktu.Text);
+                cmd.Parameters.AddWithValue("_tabungan", tbTabungan.Text);
+                cmd.Parameters.AddWithValue("_tanggal", dtpDanaMasuk.Text);
+                cmd.Parameters.AddWithValue("_rekomendasi", lblRekomendasi.Text);
+                if ((int)cmd.ExecuteScalar() == 1)
+                {
+                    MessageBox.Show("Uang Anda berhasil dimasukkan", "Well done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    conn.Close();
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error : " + ex.Message, "Insert FAIL!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
-}
+    }

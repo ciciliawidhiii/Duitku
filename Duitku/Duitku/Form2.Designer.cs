@@ -56,9 +56,9 @@
             this.lblUser.Location = new System.Drawing.Point(130, 142);
             this.lblUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(385, 87);
+            this.lblUser.Size = new System.Drawing.Size(249, 87);
             this.lblUser.TabIndex = 0;
-            this.lblUser.Text = "Hello, Abi!";
+            this.lblUser.Text = "Hello, ";
             this.lblUser.Click += new System.EventHandler(this.label1_Click);
             // 
             // dgvRekomendasiH
