@@ -18,7 +18,7 @@ namespace Duitku
             InitializeComponent();
         }
         private NpgsqlConnection conn;
-        string connstring = "Host=localhost;Port=5432;username=postgres;Password=widhi191;Database=duitkudb";
+        string connstring = "Host=localhost;Port=5432;username=postgres;Password=balance01;Database=duitkudb";
         public DataTable dt;
         public static NpgsqlCommand cmd;
         private string sql = null;
@@ -69,7 +69,7 @@ namespace Duitku
             sql = @"select * from dt_select_username(:user_name)";
             cmd = new NpgsqlCommand(sql, conn);
             string nama = "Hello" + uname + "!";
-            Console.WriteLine(nama);
+            lblUser.Text = nama;
         }
 
     }
