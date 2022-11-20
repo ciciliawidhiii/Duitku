@@ -67,5 +67,11 @@ namespace Duitku
                 conn.Close();
             }
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form4 f4 = new Form4();
+            f4.ShowDialog();
+        }
     }
 }

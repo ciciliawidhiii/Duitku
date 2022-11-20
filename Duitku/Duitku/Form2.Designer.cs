@@ -30,12 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.lblUser = new System.Windows.Forms.Label();
-            this.dgvRekomendasiH = new System.Windows.Forms.DataGridView();
             this.lbRekomendasi = new System.Windows.Forms.Label();
             this.lbPengeluaran = new System.Windows.Forms.Label();
-            this.dgvPengeluaranH = new System.Windows.Forms.DataGridView();
             this.lblSisa = new System.Windows.Forms.Label();
-            this.dgvSisaH = new System.Windows.Forms.DataGridView();
             this.lblProfilH = new System.Windows.Forms.Label();
             this.llHome = new System.Windows.Forms.LinkLabel();
             this.llCalendar = new System.Windows.Forms.LinkLabel();
@@ -43,9 +40,10 @@
             this.btnLogout = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRekomendasiH)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPengeluaranH)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSisaH)).BeginInit();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblRekom = new System.Windows.Forms.Label();
+            this.lblKeluar = new System.Windows.Forms.Label();
+            this.lblSisaUang = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,18 +58,6 @@
             this.lblUser.TabIndex = 0;
             this.lblUser.Text = "Hello, ";
             this.lblUser.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // dgvRekomendasiH
-            // 
-            this.dgvRekomendasiH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRekomendasiH.Location = new System.Drawing.Point(142, 350);
-            this.dgvRekomendasiH.Margin = new System.Windows.Forms.Padding(2);
-            this.dgvRekomendasiH.Name = "dgvRekomendasiH";
-            this.dgvRekomendasiH.RowHeadersWidth = 62;
-            this.dgvRekomendasiH.RowTemplate.Height = 33;
-            this.dgvRekomendasiH.Size = new System.Drawing.Size(360, 82);
-            this.dgvRekomendasiH.TabIndex = 1;
-            this.dgvRekomendasiH.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // lbRekomendasi
             // 
@@ -98,17 +84,6 @@
             this.lbPengeluaran.Text = "Pengeluaran ";
             this.lbPengeluaran.Click += new System.EventHandler(this.label2_Click);
             // 
-            // dgvPengeluaranH
-            // 
-            this.dgvPengeluaranH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPengeluaranH.Location = new System.Drawing.Point(142, 548);
-            this.dgvPengeluaranH.Margin = new System.Windows.Forms.Padding(2);
-            this.dgvPengeluaranH.Name = "dgvPengeluaranH";
-            this.dgvPengeluaranH.RowHeadersWidth = 62;
-            this.dgvPengeluaranH.RowTemplate.Height = 33;
-            this.dgvPengeluaranH.Size = new System.Drawing.Size(360, 82);
-            this.dgvPengeluaranH.TabIndex = 4;
-            // 
             // lblSisa
             // 
             this.lblSisa.AutoSize = true;
@@ -120,17 +95,6 @@
             this.lblSisa.Size = new System.Drawing.Size(210, 49);
             this.lblSisa.TabIndex = 5;
             this.lblSisa.Text = "Sisa Uang";
-            // 
-            // dgvSisaH
-            // 
-            this.dgvSisaH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSisaH.Location = new System.Drawing.Point(142, 758);
-            this.dgvSisaH.Margin = new System.Windows.Forms.Padding(2);
-            this.dgvSisaH.Name = "dgvSisaH";
-            this.dgvSisaH.RowHeadersWidth = 62;
-            this.dgvSisaH.RowTemplate.Height = 33;
-            this.dgvSisaH.Size = new System.Drawing.Size(360, 82);
-            this.dgvSisaH.TabIndex = 6;
             // 
             // lblProfilH
             // 
@@ -227,6 +191,47 @@
             this.pictureBox1.TabIndex = 47;
             this.pictureBox1.TabStop = false;
             // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(161, 381);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(3, 2);
+            this.guna2HtmlLabel2.TabIndex = 48;
+            // 
+            // lblRekom
+            // 
+            this.lblRekom.AutoSize = true;
+            this.lblRekom.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblRekom.ForeColor = System.Drawing.Color.Brown;
+            this.lblRekom.Location = new System.Drawing.Point(151, 365);
+            this.lblRekom.Name = "lblRekom";
+            this.lblRekom.Size = new System.Drawing.Size(277, 49);
+            this.lblRekom.TabIndex = 49;
+            this.lblRekom.Text = "RpXXX.000,00";
+            // 
+            // lblKeluar
+            // 
+            this.lblKeluar.AutoSize = true;
+            this.lblKeluar.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblKeluar.ForeColor = System.Drawing.Color.Brown;
+            this.lblKeluar.Location = new System.Drawing.Point(148, 565);
+            this.lblKeluar.Name = "lblKeluar";
+            this.lblKeluar.Size = new System.Drawing.Size(277, 49);
+            this.lblKeluar.TabIndex = 50;
+            this.lblKeluar.Text = "RpXXX.000,00";
+            // 
+            // lblSisaUang
+            // 
+            this.lblSisaUang.AutoSize = true;
+            this.lblSisaUang.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSisaUang.ForeColor = System.Drawing.Color.Brown;
+            this.lblSisaUang.Location = new System.Drawing.Point(151, 760);
+            this.lblSisaUang.Name = "lblSisaUang";
+            this.lblSisaUang.Size = new System.Drawing.Size(277, 49);
+            this.lblSisaUang.TabIndex = 51;
+            this.lblSisaUang.Text = "RpXXX.000,00";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -235,6 +240,10 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1418, 968);
+            this.Controls.Add(this.lblSisaUang);
+            this.Controls.Add(this.lblKeluar);
+            this.Controls.Add(this.lblRekom);
+            this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.btnLogout);
@@ -242,20 +251,14 @@
             this.Controls.Add(this.llCalendar);
             this.Controls.Add(this.llHome);
             this.Controls.Add(this.lblProfilH);
-            this.Controls.Add(this.dgvSisaH);
             this.Controls.Add(this.lblSisa);
-            this.Controls.Add(this.dgvPengeluaranH);
             this.Controls.Add(this.lbPengeluaran);
             this.Controls.Add(this.lbRekomendasi);
-            this.Controls.Add(this.dgvRekomendasiH);
             this.Controls.Add(this.lblUser);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form2";
             this.Text = "Homepage";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRekomendasiH)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPengeluaranH)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSisaH)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -265,12 +268,9 @@
         #endregion
 
         private Label lblUser;
-        private DataGridView dgvRekomendasiH;
         private Label lbRekomendasi;
         private Label lbPengeluaran;
-        private DataGridView dgvPengeluaranH;
         private Label lblSisa;
-        private DataGridView dgvSisaH;
         private Label lblProfilH;
         private LinkLabel llHome;
         private LinkLabel llCalendar;
@@ -278,5 +278,9 @@
         private Guna.UI2.WinForms.Guna2CircleButton btnLogout;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private PictureBox pictureBox1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Label lblRekom;
+        private Label lblKeluar;
+        private Label lblSisaUang;
     }
 }

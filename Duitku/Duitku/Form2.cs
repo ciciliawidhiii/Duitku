@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,7 +17,11 @@ namespace Duitku
         {
             InitializeComponent();
         }
-
+        private NpgsqlConnection conn;
+        string connstring = "Host=localhost;Port=5432;username=postgres;Password=widhi191;Database=duitkudb";
+        public DataTable dt;
+        public static NpgsqlCommand cmd;
+        private string sql = null;
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -60,7 +65,11 @@ namespace Duitku
 
         private void label1_Click(object sender, EventArgs e)
         {
-            //Console.WriteLine("Hello, " + );
+            conn.Open();
+            sql = @"select * from dt_select_username(:user_name)";
+            cmd = new NpgsqlCommand(sql, conn);
+            string nama = "Hello" + Convert.ToString(sql) + "!";
+            Console.WriteLine(nama);
         }
 
     }
