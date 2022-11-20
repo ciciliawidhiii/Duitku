@@ -52,6 +52,7 @@ namespace Duitku
             User pw = new User();
             pw.userName = tbPassword.Text;
         }
+        private string uname;
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             try
