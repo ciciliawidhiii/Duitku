@@ -20,7 +20,7 @@ namespace Duitku
             InitializeComponent();
         }
         private NpgsqlConnection conn;
-        string connstring = "Host=localhost;Port=5432;username=postgres;Password=widhi191;Database=duitkudb";
+        string connstring = "Host=localhost;Port=5432;username=postgres;Password=balance01;Database=postgres";
         public DataTable dt;
         public static NpgsqlCommand cmd;
         private string sql = null;

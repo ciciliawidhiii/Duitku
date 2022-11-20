@@ -5,23 +5,26 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Duitku
 {
     public partial class Form2 : Form
     {
-        public Form2()
-        {
-            InitializeComponent();
-        }
         private NpgsqlConnection conn;
         string connstring = "Host=localhost;Port=5432;username=postgres;Password=balance01;Database=duitkudb";
         public DataTable dt;
         public static NpgsqlCommand cmd;
         private string sql = null;
+        public Form2()
+        {
+            InitializeComponent();
+        }
+
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -65,12 +68,11 @@ namespace Duitku
         private string uname;
         private void label1_Click(object sender, EventArgs e)
         {
-            conn.Open();
-            cmd = new NpgsqlCommand(sql, conn);
-            sql = @"select * from dt_select_username(:user_name)";
-            string nama = ("Hello, " + uname + "!");
-            lblUser.Text = nama;
-        }
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter("select * from TableName", conn);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            lblUser.Text = Convert.ToString(ds.Tables[0].Rows[0][1]);
 
+        }
     }
 }
