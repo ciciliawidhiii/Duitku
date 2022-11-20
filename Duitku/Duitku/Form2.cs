@@ -66,9 +66,9 @@ namespace Duitku
         private void label1_Click(object sender, EventArgs e)
         {
             conn.Open();
-            sql = @"select * from dt_select_username(:user_name)";
             cmd = new NpgsqlCommand(sql, conn);
-            string nama = "Hello" + uname + "!";
+            sql = @"select * from dt_select_username(:user_name)";
+            string nama = ("Hello, " + uname + "!");
             lblUser.Text = nama;
         }
 
