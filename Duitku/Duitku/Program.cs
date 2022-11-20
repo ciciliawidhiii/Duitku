@@ -8,7 +8,7 @@ namespace Duitku
         {
 
             ApplicationConfiguration.Initialize();
-            Application.Run(new formLogin());
+            Application.Run(new Landing_Page());
         }
     }
 }

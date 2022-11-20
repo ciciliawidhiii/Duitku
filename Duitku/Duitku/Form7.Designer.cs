@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form7));
             this.llOutcome = new System.Windows.Forms.LinkLabel();
             this.llIncome = new System.Windows.Forms.LinkLabel();
@@ -173,11 +174,14 @@
             // 
             // dgvRiwayat
             // 
+            this.dgvRiwayat.BackgroundColor = System.Drawing.Color.PeachPuff;
             this.dgvRiwayat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvRiwayat.Location = new System.Drawing.Point(192, 462);
             this.dgvRiwayat.Margin = new System.Windows.Forms.Padding(2);
             this.dgvRiwayat.Name = "dgvRiwayat";
             this.dgvRiwayat.RowHeadersWidth = 62;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dgvRiwayat.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvRiwayat.RowTemplate.Height = 33;
             this.dgvRiwayat.Size = new System.Drawing.Size(1049, 412);
             this.dgvRiwayat.TabIndex = 36;
