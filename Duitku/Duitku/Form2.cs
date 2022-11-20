@@ -67,9 +67,14 @@ namespace Duitku
         {
             conn.Open();
             cmd = new NpgsqlCommand(sql, conn);
-            sql = @"select * from dt_select_username(:user_name)";
+            sql = @"select * from dt_select_username()";
+            cmd = new NpgsqlCommand(sql, conn);
             string nama = ("Hello, " + uname + "!");
             lblUser.Text = nama;
+            conn.Close();
+
+            
+           
         }
 
     }

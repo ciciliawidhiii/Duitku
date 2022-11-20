@@ -110,7 +110,7 @@
             this.tbEmail.Size = new System.Drawing.Size(534, 57);
             this.tbEmail.TabIndex = 6;
             this.tbEmail.Text = "example@gmail.com";
-            this.tbEmail.TextChanged += new System.EventHandler(this.tbEmail_TextChanged);
+            this.tbEmail.TextChanged += new System.EventHandler(this.tbUname_TextChanged);
             // 
             // tbPassword
             // 

@@ -23,7 +23,7 @@ namespace Duitku
             conn = new NpgsqlConnection(connstring);
         }
 
-        private void tbEmail_TextChanged(object sender, EventArgs e)
+        private void tbUname_TextChanged(object sender, EventArgs e)
         {
             User emil = new User();
             emil.Email = tbEmail.Text;
