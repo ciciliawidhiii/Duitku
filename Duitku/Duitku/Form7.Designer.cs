@@ -32,18 +32,19 @@
             this.llOutcome = new System.Windows.Forms.LinkLabel();
             this.llIncome = new System.Windows.Forms.LinkLabel();
             this.llHome = new System.Windows.Forms.LinkLabel();
-            this.tbPengeluaran = new System.Windows.Forms.TextBox();
+            this.tbUangKeluar = new System.Windows.Forms.TextBox();
             this.lbPengeluaran = new System.Windows.Forms.Label();
             this.lbRp = new System.Windows.Forms.Label();
             this.lbKetUangKeluar = new System.Windows.Forms.Label();
             this.dtpDanaKeluar = new System.Windows.Forms.DateTimePicker();
             this.lbDateKeluar = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvRiwayat = new System.Windows.Forms.DataGridView();
             this.lblRiwayatDanaKeluar = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btnAddOutcome = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRiwayat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,15 +90,15 @@
             this.llHome.Text = "Home";
             this.llHome.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llHome_LinkClicked_1);
             // 
-            // tbPengeluaran
+            // tbUangKeluar
             // 
-            this.tbPengeluaran.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tbPengeluaran.Location = new System.Drawing.Point(192, 168);
-            this.tbPengeluaran.Margin = new System.Windows.Forms.Padding(2);
-            this.tbPengeluaran.Name = "tbPengeluaran";
-            this.tbPengeluaran.Size = new System.Drawing.Size(289, 42);
-            this.tbPengeluaran.TabIndex = 29;
-            this.tbPengeluaran.TextChanged += new System.EventHandler(this.tbPengeluaran_TextChanged);
+            this.tbUangKeluar.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbUangKeluar.Location = new System.Drawing.Point(192, 168);
+            this.tbUangKeluar.Margin = new System.Windows.Forms.Padding(2);
+            this.tbUangKeluar.Name = "tbUangKeluar";
+            this.tbUangKeluar.Size = new System.Drawing.Size(289, 42);
+            this.tbUangKeluar.TabIndex = 29;
+            this.tbUangKeluar.TextChanged += new System.EventHandler(this.tbPengeluaran_TextChanged);
             // 
             // lbPengeluaran
             // 
@@ -170,16 +171,16 @@
             this.label1.TabIndex = 35;
             this.label1.Text = "Masukkan uang pengeluaran Anda\r\n";
             // 
-            // dataGridView1
+            // dgvRiwayat
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(192, 462);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(1049, 412);
-            this.dataGridView1.TabIndex = 36;
+            this.dgvRiwayat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRiwayat.Location = new System.Drawing.Point(192, 462);
+            this.dgvRiwayat.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvRiwayat.Name = "dgvRiwayat";
+            this.dgvRiwayat.RowHeadersWidth = 62;
+            this.dgvRiwayat.RowTemplate.Height = 33;
+            this.dgvRiwayat.Size = new System.Drawing.Size(1049, 412);
+            this.dgvRiwayat.TabIndex = 36;
             // 
             // lblRiwayatDanaKeluar
             // 
@@ -216,30 +217,46 @@
             this.label2.TabIndex = 41;
             this.label2.Text = "Duitku";
             // 
+            // btnAddOutcome
+            // 
+            this.btnAddOutcome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnAddOutcome.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAddOutcome.ForeColor = System.Drawing.Color.White;
+            this.btnAddOutcome.Location = new System.Drawing.Point(215, 264);
+            this.btnAddOutcome.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddOutcome.Name = "btnAddOutcome";
+            this.btnAddOutcome.Size = new System.Drawing.Size(211, 62);
+            this.btnAddOutcome.TabIndex = 42;
+            this.btnAddOutcome.Text = "Add";
+            this.btnAddOutcome.UseVisualStyleBackColor = false;
+            this.btnAddOutcome.Click += new System.EventHandler(this.btnAddOutcome_Click);
+            // 
             // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1418, 968);
+            this.Controls.Add(this.btnAddOutcome);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblRiwayatDanaKeluar);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvRiwayat);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbDateKeluar);
             this.Controls.Add(this.dtpDanaKeluar);
             this.Controls.Add(this.lbKetUangKeluar);
             this.Controls.Add(this.lbRp);
             this.Controls.Add(this.lbPengeluaran);
-            this.Controls.Add(this.tbPengeluaran);
+            this.Controls.Add(this.tbUangKeluar);
             this.Controls.Add(this.llOutcome);
             this.Controls.Add(this.llIncome);
             this.Controls.Add(this.llHome);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form7";
             this.Text = "Form7";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Form7_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRiwayat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -251,17 +268,18 @@
         private LinkLabel llOutcome;
         private LinkLabel llIncome;
         private LinkLabel llHome;
-        private TextBox tbPengeluaran;
+        private TextBox tbUangKeluar;
         private Label lbPengeluaran;
         private Label lbRp;
         private Label lbKetUangKeluar;
         private DateTimePicker dtpDanaKeluar;
         private Label lbDateKeluar;
         private Label label1;
-        private DataGridView dataGridView1;
+        private DataGridView dgvRiwayat;
         private Label lblRiwayatDanaKeluar;
         private PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Button btnAddOut;
         private Label label2;
+        private Button btnAddOutcome;
     }
 }
