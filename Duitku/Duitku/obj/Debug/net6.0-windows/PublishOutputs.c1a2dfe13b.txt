@@ -1,0 +1,7 @@
+D:\AppsDuitku\Duitku.exe
+D:\AppsDuitku\Duitku.dll
+D:\AppsDuitku\Duitku.deps.json
+D:\AppsDuitku\Duitku.runtimeconfig.json
+D:\AppsDuitku\Duitku.pdb
+D:\AppsDuitku\Guna.UI2.dll
+D:\AppsDuitku\Npgsql.dll
