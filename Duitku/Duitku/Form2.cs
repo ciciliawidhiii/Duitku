@@ -28,7 +28,7 @@ namespace Duitku
             lblUser.Text = "Hi " + name + "!";
         }
         private NpgsqlConnection conn;
-        string connstring = "Host=localhost;Port=5432;username=postgres;Password=balance01;Database=postgres";
+        string connstring = "Host=localhost;Port=5432;username=postgres;Password=widhi191;Database=duitkudb";
         public DataTable dt;
         public static NpgsqlCommand cmd;
         private string sql = null;
@@ -36,7 +36,6 @@ namespace Duitku
         {
             InitializeComponent();
             lblRekom.Text = Form6.lblrekom6;
-            this.lblrekom6 = lblrekom6;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -82,11 +81,7 @@ namespace Duitku
         private string uname;
         private void label1_Click(object sender, EventArgs e)
         {
-            NpgsqlDataAdapter da = new NpgsqlDataAdapter("select * from TableName", conn);
-            DataSet ds = new DataSet();
-            da.Fill(ds);
-            lblUser.Text = Convert.ToString(ds.Tables[0].Rows[0][1]);
-
+            
         }
 
         private void lblRekom_Click(object sender, EventArgs e)
@@ -108,7 +103,8 @@ namespace Duitku
         {
             conn.Open();
             int outcome = 0;
-            NpgsqlCommand cmd_outcome = new NpgsqlCommand("Select sum (uang_keluar) as total from tb_outcome where user_id = '" + Pengguna.ID_user + "'", conn);
+            
+            NpgsqlCommand cmd_outcome = new NpgsqlCommand("Select sum (uang_keluar) as total from tb_outcome where id = '" + Pengguna.ID_user + "'", conn);
             NpgsqlDataReader out_reader = cmd_outcome.ExecuteReader();
             while (out_reader.Read())
             {
@@ -122,15 +118,38 @@ namespace Duitku
                 }
             }
             lblKeluar.Text = outcome.ToString();
+            lblRekom.Text = Form6.lblrekom6;
             conn.Close();
-
-            //int balance = income - outcome;
-            //lblKeluar.Text = balance.ToString();
+            //int income = ;
+            /*int balance = income - outcome;
+            lblKeluar.Text = balance.ToString();*/
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
             conn = new NpgsqlConnection(connstring);
+            conn.Open();
+            int outcome = 0;
+
+            NpgsqlCommand cmd_outcome = new NpgsqlCommand("Select sum (uang_keluar) as total from tb_outcome where id = '" + Pengguna.ID_user + "'", conn);
+            NpgsqlDataReader out_reader = cmd_outcome.ExecuteReader();
+            while (out_reader.Read())
+            {
+                try
+                {
+                    outcome = out_reader.GetInt32(0);
+                }
+                catch
+                {
+                    outcome = 0;
+                }
+            }
+            lblKeluar.Text = outcome.ToString();
+            lblRekom.Text = Form6.lblrekom6;
+            conn.Close();
+
+            //int balance = income - outcome;
+            //lblKeluar.Text = balance.ToString();
         }
     }
  }

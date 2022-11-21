@@ -18,8 +18,8 @@ namespace Duitku
         {
             InitializeComponent();
             Pengguna = pengguna;
-            /*string id_user = Pengguna.ID_user;
-            string name = Pengguna.userName;*/
+            string id_user = Pengguna.ID_user;
+            //string name = Pengguna.userName;
 
         }
         private NpgsqlConnection conn;
@@ -88,8 +88,9 @@ namespace Duitku
             try
             {
                 conn.Open();
-                sql = @"select * from dt_insert_outcome(:_uangkeluar::integer,:_loguang::date)";
+                sql = @"select * from dt_insert_outcomess(:_id::character varying,:_uangkeluar::integer,:_loguang::date)";
                 cmd = new NpgsqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("_id", Pengguna.ID_user);
                 cmd.Parameters.AddWithValue("_uangkeluar", tbUangKeluar.Text);
                 cmd.Parameters.AddWithValue("_loguang", dtpDanaKeluar.Text);
                 if ((int)cmd.ExecuteScalar() == 1)
@@ -108,7 +109,7 @@ namespace Duitku
             {
                 conn.Open();
                 dgvRiwayat.DataSource = null;
-                sql = "select * from dt_select_outcome()";
+                sql = "select * from tb_outcome where id= '" + Pengguna.ID_user + "'";
                 cmd = new NpgsqlCommand(sql, conn);
                 dt = new DataTable();
                 NpgsqlDataReader rd = cmd.ExecuteReader();

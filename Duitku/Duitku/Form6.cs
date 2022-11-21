@@ -36,7 +36,7 @@ namespace Duitku
         private void llHome_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            Form2 f2 = new Form2(lblrekom6);
+            Form2 f2 = new Form2(Pengguna);
             f2.ShowDialog();
         }
 
@@ -49,7 +49,7 @@ namespace Duitku
 
         private void tbUangAwal_TextChanged(object sender, EventArgs e)
         {
-
+            int income = Convert.ToInt32(tbUangAwal.Text);
         }
 
         private void tbJangkaWaktu_TextChanged(object sender, EventArgs e)
@@ -81,8 +81,9 @@ namespace Duitku
             try
             {
                 conn.Open();
-                sql = @"select * from dt_insert_income(:_uangmasuk::integer,:_jangkawaktu::integer,:_tabungan::integer, :_tanggal::date, :_rekomendasi::character varying)";
+                sql = @"select * from dt_insert_incomess(:_id::character varying,:_uangmasuk::integer,:_jangkawaktu::integer,:_tabungan::integer, :_tanggal::date, :_rekomendasi::character varying)";
                 cmd = new NpgsqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("_id", Pengguna.ID_user);
                 cmd.Parameters.AddWithValue("_uangmasuk", tbUangAwal.Text);
                 cmd.Parameters.AddWithValue("_jangkawaktu", tbJangkaWaktu.Text);
                 cmd.Parameters.AddWithValue("_tabungan", tbTabungan.Text);
@@ -99,7 +100,7 @@ namespace Duitku
             {
                 MessageBox.Show("Error : " + ex.Message, "Insert FAIL!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            Form2 f2 = new Form2(lblrekom6);
+            Form2 f2 = new Form2(Pengguna);
             f2.ShowDialog();
         }
     }
