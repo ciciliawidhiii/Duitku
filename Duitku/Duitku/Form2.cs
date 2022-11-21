@@ -54,15 +54,15 @@ namespace Duitku
 
         private void llFinance_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Hide();
-            Form7 f7 = new Form7();
+            //this.Hide();
+            Form7 f7 = new Form7(Pengguna);
             f7.ShowDialog();
         }
 
         private void llCalendar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Hide();
-            Form6 f6 = new Form6();
+            //this.Hide();
+            Form6 f6 = new Form6(Pengguna);
             f6.ShowDialog();
         }
 
@@ -87,6 +87,7 @@ namespace Duitku
 
         private void lblRekom_Click(object sender, EventArgs e)
         {
+            lblRekom.Text = Form6.lblrekom6;
         }
     }
 }

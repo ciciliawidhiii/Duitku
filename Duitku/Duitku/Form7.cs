@@ -11,11 +11,16 @@ using System.Windows.Forms;
 
 namespace Duitku
 {
-    public partial class Form7 : Form
+    partial class Form7 : Form
     {
-        public Form7()
+        public User Pengguna;
+        public Form7(User pengguna)
         {
             InitializeComponent();
+            Pengguna = pengguna;
+            string id_user = Pengguna.ID_user;
+            string name = Pengguna.userName;
+
         }
         private NpgsqlConnection conn;
         string connstring = "Host=localhost;Port=5432;username=postgres;Password=widhi191;Database=duitkudb";
@@ -42,7 +47,7 @@ namespace Duitku
         private void llIncome_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            Form6 f6 = new Form6();
+            Form6 f6 = new Form6(Pengguna);
             f6.ShowDialog();
         }
 
@@ -63,7 +68,7 @@ namespace Duitku
         private void llIncome_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            Form6 f6 = new Form6();
+            Form6 f6 = new Form6(Pengguna);
             f6.ShowDialog();
         }
 
@@ -103,7 +108,7 @@ namespace Duitku
             {
                 conn.Open();
                 dgvRiwayat.DataSource = null;
-                sql = "select * from dt_select_outcome()";
+                sql = "select * from tb_outcome where user_id = '" + Pengguna.ID_user + "'";
                 cmd = new NpgsqlCommand(sql, conn);
                 dt = new DataTable();
                 NpgsqlDataReader rd = cmd.ExecuteReader();
