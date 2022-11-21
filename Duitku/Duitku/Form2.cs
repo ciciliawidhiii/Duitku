@@ -103,26 +103,29 @@ namespace Duitku
         {
             conn.Open();
             int outcome = 0;
-            
+            int income = 0;
             NpgsqlCommand cmd_outcome = new NpgsqlCommand("Select sum (uang_keluar) as total from tb_outcome where id = '" + Pengguna.ID_user + "'", conn);
             NpgsqlDataReader out_reader = cmd_outcome.ExecuteReader();
+            NpgsqlCommand cmd_income = new NpgsqlCommand("Select sum (uang_masuk) as total from tb_income where id = '" + Pengguna.ID_user + "'", conn);
+            NpgsqlDataReader in_reader = cmd_income.ExecuteReader();
             while (out_reader.Read())
             {
                 try
                 {
                     outcome = out_reader.GetInt32(0);
+                    income = in_reader.GetInt32(1);
                 }
                 catch
                 {
                     outcome = 0;
+                    income = 0;
                 }
             }
             lblKeluar.Text = outcome.ToString();
             lblRekom.Text = Form6.lblrekom6;
+            lblSisa.Text = income.ToString();
             conn.Close();
-            //int income = ;
-            /*int balance = income - outcome;
-            lblKeluar.Text = balance.ToString();*/
+            Form6 uangawal = new Form6(Pengguna);
         }
 
         private void Form2_Load(object sender, EventArgs e)

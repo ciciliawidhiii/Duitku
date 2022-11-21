@@ -15,7 +15,7 @@ namespace Duitku
             get { return _duitAkhir;}
         }
 
-        public int duitSisa(int duitAkhir)
+        public int duitSisa(int duitawal, int duittabung, int duitkeluar)
         {
             pemasukan n = new pemasukan();
             tabungan p = new tabungan();
