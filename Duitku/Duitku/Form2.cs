@@ -106,8 +106,6 @@ namespace Duitku
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            
-            conn.Close();
             conn.Open();
             int outcome = 0;
             NpgsqlCommand cmd_outcome = new NpgsqlCommand("Select sum (uang_keluar) as total from tb_outcome where user_id = '" + Pengguna.ID_user + "'", conn);
@@ -129,6 +127,11 @@ namespace Duitku
             //int balance = income - outcome;
             //lblKeluar.Text = balance.ToString();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            conn = new NpgsqlConnection(connstring);
+        }
     }
-    }
-}
+ }
+
