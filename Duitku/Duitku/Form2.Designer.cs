@@ -233,6 +233,7 @@
             this.lblSisaUang.Size = new System.Drawing.Size(277, 49);
             this.lblSisaUang.TabIndex = 51;
             this.lblSisaUang.Text = "RpXXX.000,00";
+            this.lblSisaUang.Click += new System.EventHandler(this.lblSisaUang_Click);
             // 
             // Form2
             // 
@@ -282,7 +283,7 @@
         private PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Label lblKeluar;
-        private Label lblSisaUang;
         public Label lblRekom;
+        public Label lblSisaUang;
     }
 }

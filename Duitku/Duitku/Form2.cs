@@ -17,6 +17,8 @@ namespace Duitku
     partial class Form2 : Form
     {
         public User Pengguna;
+        private string lblrekom6;
+        
         public Form2(User pengguna)
         {
             InitializeComponent();
@@ -30,9 +32,11 @@ namespace Duitku
         public DataTable dt;
         public static NpgsqlCommand cmd;
         private string sql = null;
-        public Form2()
+        public Form2(string lblrekom6)
         {
             InitializeComponent();
+            lblRekom.Text = Form6.lblrekom6;
+            this.lblrekom6 = lblrekom6;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -87,6 +91,12 @@ namespace Duitku
 
         private void lblRekom_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void lblSisaUang_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
