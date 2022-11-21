@@ -13,11 +13,15 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Duitku
 {
-    public partial class Form6 : Form
+    partial class Form6 : Form
     {
-        public Form6()
+        public User Pengguna; 
+        public Form6(User pengguna)
         {
             InitializeComponent();
+            Pengguna = pengguna;
+           /* string id_user = Pengguna.ID_user;
+            string name = Pengguna.userName;*/
         }
         private NpgsqlConnection conn;
         string connstring = "Host=localhost;Port=5432;username=postgres;Password=widhi191;Database=duitkudb";
@@ -39,7 +43,7 @@ namespace Duitku
         private void llOutcome_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            Form7 f7 = new Form7();
+            Form7 f7 = new Form7(Pengguna);
             f7.ShowDialog();
         }
 
@@ -95,6 +99,8 @@ namespace Duitku
             {
                 MessageBox.Show("Error : " + ex.Message, "Insert FAIL!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            Form2 f2 = new Form2(lblrekom6);
+            f2.ShowDialog();
         }
     }
     }

@@ -52,21 +52,21 @@ namespace Duitku
         private void guna2CircleButton1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form5 f5 = new Form5();
+            Form5 f5 = new Form5(Pengguna);
             f5.ShowDialog();
         }
 
         private void llFinance_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            Form7 f7 = new Form7();
+            Form7 f7 = new Form7(Pengguna);
             f7.ShowDialog();
         }
 
         private void llCalendar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            Form6 f6 = new Form6();
+            Form6 f6 = new Form6(Pengguna);
             f6.ShowDialog();
         }
 

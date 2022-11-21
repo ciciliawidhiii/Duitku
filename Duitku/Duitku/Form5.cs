@@ -10,11 +10,15 @@ using System.Windows.Forms;
 
 namespace Duitku
 {
-    public partial class Form5 : Form
+    partial class Form5 : Form
     {
-        public Form5()
+        public User Pengguna;
+        public Form5(User pengguna)
         {
             InitializeComponent();
+            Pengguna = pengguna;
+            string id_user = Pengguna.ID_user;
+            string name = Pengguna.userName;
         }
 
         private void guna2vTrackBar1_Scroll(object sender, ScrollEventArgs e)
@@ -37,14 +41,14 @@ namespace Duitku
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 f2 = new Form2();
+            Form2 f2 = new Form2(Pengguna);
             f2.ShowDialog();
         }
 
         private void btnNotLogout_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 f2 = new Form2();
+            Form2 f2 = new Form2(Pengguna);
             f2.ShowDialog();
         }
 
