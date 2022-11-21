@@ -98,5 +98,37 @@ namespace Duitku
         {
 
         }
+
+        private void lblKeluar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            
+            conn.Close();
+            conn.Open();
+            int outcome = 0;
+            NpgsqlCommand cmd_outcome = new NpgsqlCommand("Select sum (uang_keluar) as total from tb_outcome where user_id = '" + Pengguna.ID_user + "'", conn);
+            NpgsqlDataReader out_reader = cmd_outcome.ExecuteReader();
+            while (out_reader.Read())
+            {
+                try
+                {
+                    outcome = out_reader.GetInt32(0);
+                }
+                catch
+                {
+                    outcome = 0;
+                }
+            }
+            lblKeluar.Text = outcome.ToString();
+            conn.Close();
+
+            //int balance = income - outcome;
+            //lblKeluar.Text = balance.ToString();
+        }
+    }
     }
 }
