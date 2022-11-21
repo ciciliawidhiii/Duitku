@@ -70,9 +70,11 @@ namespace Duitku
         private void btnAddFinance_Click_1(object sender, EventArgs e)
         {
             rekomendasipengeluaran uangRek = new rekomendasipengeluaran();
+            Form2 uangrekom = new Form2();
             int reklagi = uangRek.reccomendation(Convert.ToInt32(tbUangAwal.Text), Convert.ToInt32(tbTabungan.Text), Convert.ToInt32(tbJangkaWaktu.Text));
             string msgrek = "Rp" + Convert.ToString(reklagi) + ",00/hari";
             lblRekomendasi.Text = msgrek;
+            uangrekom.lblRekom.Text = msgrek;
             try
             {
                 conn.Open();

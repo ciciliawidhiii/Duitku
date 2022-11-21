@@ -387,19 +387,14 @@
         }
 
         #endregion
-
-        private TextBox tbUangAwal;
         private LinkLabel llIncome;
         private LinkLabel llHome;
         private Label lbUangAwal;
         private Label lbRp;
         private Label label1;
         private Label lbJangkaWaktu;
-        private TextBox tbJangkaWaktu;
         private Label label2;
         private Label lbTabungan;
-        private TextBox tbTabungan;
-        private Button btnAddFinance;
         private Label label3;
         private LinkLabel llOutcome;
         private Label lbKetUangAwal;
@@ -411,6 +406,10 @@
         private DateTimePicker dtpDanaMasuk;
         private PictureBox pictureBox2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblRekomendasi;
+        public TextBox tbUangAwal;
+        public TextBox tbJangkaWaktu;
+        public TextBox tbTabungan;
+        public Button btnAddFinance;
+        public Guna.UI2.WinForms.Guna2HtmlLabel lblRekomendasi;
     }
 }
