@@ -8,6 +8,7 @@ using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
@@ -117,13 +118,15 @@ namespace Duitku
                     outcome = 0;
                 }
             }
-            lblKeluar.Text = outcome.ToString();
+            string outcomeku = outcome.ToString();
+            string outcomehh = "Rp" + outcomeku + ",00";
+            lblKeluar.Text = outcomehh;
             lblRekom.Text = Form6.lblrekom6;
             conn.Close();
 
             conn.Open();
             int income = 0;
-            NpgsqlCommand cmd_income = new NpgsqlCommand("Select sum (in_amount) as total from tb_income where id_user = '" + Pengguna.ID_user + "'", conn);
+            NpgsqlCommand cmd_income = new NpgsqlCommand("Select sum (uang_masuk) as total from tb_income where id = '" + Pengguna.ID_user + "'", conn);
             NpgsqlDataReader in_reader = cmd_income.ExecuteReader();
             while (in_reader.Read())
             {
@@ -136,13 +139,16 @@ namespace Duitku
                     income = 0;
                 }
             }
-            lblSisa.Text = income.ToString();
+            int sisabgt = income - outcome;
+            string sisahh = "Rp" + sisabgt + ",00";
+            lblSisaUang.Text = sisahh;
             conn.Close();
             Form6 uangawal = new Form6(Pengguna);
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            conn = new NpgsqlConnection(connstring);
             conn.Open();
             int outcome = 0;
             NpgsqlCommand cmd_outcome = new NpgsqlCommand("Select sum (uang_keluar) as total from tb_outcome where id = '" + Pengguna.ID_user + "'", conn);
@@ -159,13 +165,15 @@ namespace Duitku
                     outcome = 0;
                 }
             }
-            lblKeluar.Text = outcome.ToString();
+            string outcomeku = outcome.ToString();
+            string outcomehh = "Rp" + outcomeku + ",00";
+            lblKeluar.Text = outcomehh;
             lblRekom.Text = Form6.lblrekom6;
             conn.Close();
 
             conn.Open();
             int income = 0;
-            NpgsqlCommand cmd_income = new NpgsqlCommand("Select sum (in_amount) as total from tb_income where id_user = '" + Pengguna.ID_user + "'", conn);
+            NpgsqlCommand cmd_income = new NpgsqlCommand("Select sum (uang_masuk) as total from tb_income where id = '" + Pengguna.ID_user + "'", conn);
             NpgsqlDataReader in_reader = cmd_income.ExecuteReader();
             while (in_reader.Read())
             {
@@ -178,9 +186,10 @@ namespace Duitku
                     income = 0;
                 }
             }
-            lblSisa.Text = income.ToString();
+            int sisabgt = income - outcome;
+            string sisahh = "Rp" + sisabgt + ",00";
+            lblSisaUang.Text = sisahh;
             conn.Close();
-
             //int balance = income - outcome;
             //lblKeluar.Text = balance.ToString();
         }
