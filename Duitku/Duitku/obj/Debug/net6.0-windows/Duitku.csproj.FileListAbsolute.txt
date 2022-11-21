@@ -154,3 +154,4 @@ C:\Users\Asus\Documents\GitHub\DuitkuLagi\Duitku\Duitku\Duitku\obj\Debug\net6.0-
 C:\Users\Asus\Documents\GitHub\DuitkuLagi\Duitku\Duitku\Duitku\obj\Debug\net6.0-windows\Duitku.pdb
 C:\Users\Asus\Documents\GitHub\DuitkuLagi\Duitku\Duitku\Duitku\obj\Debug\net6.0-windows\Duitku.genruntimeconfig.cache
 C:\Users\Asus\Documents\GitHub\DuitkuLagi\Duitku\Duitku\Duitku\obj\Debug\net6.0-windows\ref\Duitku.dll
+C:\Users\Asus\source\repos\DuitkuFix2\Duitku\Duitku\obj\Debug\net6.0-windows\Duitku.Landing_Page.resources

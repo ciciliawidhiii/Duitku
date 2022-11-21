@@ -26,7 +26,7 @@ namespace Duitku
             InitializeComponent();
         }
         private NpgsqlConnection conn;
-        string connstring = "Host=localhost;Port=5432;username=postgres;Password=balance01;Database=postgres";
+        string connstring = "Host=localhost;Port=5432;username=postgres;Password=widhi191;Database=duitkudb";
         public DataTable dt;
         public static NpgsqlCommand cmd;
         private string sql = null;
@@ -37,20 +37,20 @@ namespace Duitku
         }
         private void tbEmail_TextChanged(object sender, EventArgs e)
         {
-            User emil = new User();
-            emil.userName = tbEmail.Text;
+            //User emil = new User();
+            //emil.userName = tbEmail.Text;
         }
 
         private void tbUserName_TextChanged(object sender, EventArgs e)
         {
-            User uname = new User();
-            uname.userName = tbUserName.Text;
+            //User uname = new User();
+            //uname.userName = tbUserName.Text;
         }
 
         private void tbPassword_TextChanged(object sender, EventArgs e)
         {
-            User pw = new User();
-            pw.userName = tbPassword.Text;
+            //User pw = new User();
+            //pw.userName = tbPassword.Text;
         }
         private string uname;
         private void guna2Button1_Click(object sender, EventArgs e)

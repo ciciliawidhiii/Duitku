@@ -13,10 +13,20 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Duitku
 {
-    public partial class Form2 : Form
+    
+    partial class Form2 : Form
     {
+        public User Pengguna;
+        public Form2(User pengguna)
+        {
+            InitializeComponent();
+            Pengguna = pengguna;
+            string id_user = Pengguna.ID_user;
+            string name = Pengguna.userName;
+            lblUser.Text = "Hi " + name + "!";
+        }
         private NpgsqlConnection conn;
-        string connstring = "Host=localhost;Port=5432;username=postgres;Password=balance01;Database=duitkudb";
+        string connstring = "Host=localhost;Port=5432;username=postgres;Password=widhi191;Database=duitkudb";
         public DataTable dt;
         public static NpgsqlCommand cmd;
         private string sql = null;
@@ -72,6 +82,11 @@ namespace Duitku
             DataSet ds = new DataSet();
             da.Fill(ds);
             lblUser.Text = Convert.ToString(ds.Tables[0].Rows[0][1]);
+
+        }
+
+        private void lblRekom_Click(object sender, EventArgs e)
+        {
 
         }
     }

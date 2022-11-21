@@ -196,8 +196,9 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(161, 381);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(3, 2);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(0, 0);
             this.guna2HtmlLabel2.TabIndex = 48;
+            this.guna2HtmlLabel2.Text = null;
             // 
             // lblRekom
             // 
@@ -209,6 +210,7 @@
             this.lblRekom.Size = new System.Drawing.Size(277, 49);
             this.lblRekom.TabIndex = 49;
             this.lblRekom.Text = "RpXXX.000,00";
+            this.lblRekom.Click += new System.EventHandler(this.lblRekom_Click);
             // 
             // lblKeluar
             // 

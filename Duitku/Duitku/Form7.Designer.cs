@@ -179,7 +179,7 @@
             this.dgvRiwayat.Location = new System.Drawing.Point(192, 462);
             this.dgvRiwayat.Margin = new System.Windows.Forms.Padding(2);
             this.dgvRiwayat.Name = "dgvRiwayat";
-            this.dgvRiwayat.RowHeadersWidth = 62;
+            this.dgvRiwayat.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dgvRiwayat.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvRiwayat.RowTemplate.Height = 33;
